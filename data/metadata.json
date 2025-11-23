@@ -1,0 +1,3483 @@
+[
+  {
+    "file_source": "1.txt",
+    "main_article": {
+      "title": "TP. Hồ Chí Minh phấn đấu hoàn thành 6 tuyến đường sắt đô thị vào năm 2030",
+      "slug": "tp-ho-chi-minh-phan-dau-hoan-thanh-6-tuyen-duong-sat-do-thi-vao-nam-2030",
+      "description": "TP.HCM đặt mục tiêu hoàn thành 6 tuyến đường sắt đô thị vào năm 2030 nhằm giải quyết vấn đề giao thông và thúc đẩy phát triển hạ tầng.",
+      "author": "Hồng Vinh",
+      "publish_date": "2025-11-17T14:13:00",
+      "keywords": [
+        "đường sắt đô thị",
+        "TP.HCM",
+        "giao thông",
+        "hạ tầng",
+        "metro"
+      ],
+      "entities": {
+        "locations": ["TP. Hồ Chí Minh"],
+        "people": ["Trần Lưu Quang"],
+        "organizations": [
+          "Thành ủy TP.HCM",
+          "Ban Chỉ đạo phát triển hệ thống mạng lưới đường sắt đô thị"
+        ]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2030",
+      "investment_capital": null,
+      "key_figures": ["6 tuyến đường sắt đô thị"]
+    },
+    "related_articles": [
+      {
+        "title": "Khởi công (giai đoạn 2) dự án Mikazuki Japanese Resorts & Spa tại Đà Nẵng",
+        "category": "Nhà đầu tư"
+      }
+    ]
+  },
+  {
+    "file_source": "2.txt",
+    "main_article": {
+      "title": "Đề xuất hình thức đầu tư dự án cao tốc Vinh - Thanh Thủy gần 24.000 tỷ đồng",
+      "slug": "de-xuat-hinh-thuc-dau-tu-du-an-cao-toc-vinh-thanh-thuy-gan-24000-ty-dong",
+      "description": "Chính phủ trình Quốc hội đề xuất đầu tư công dự án cao tốc Vinh - Thanh Thủy với tổng vốn gần 24.000 tỷ đồng để phát triển kinh tế xã hội và an ninh quốc phòng.",
+      "author": "Gia Huy",
+      "publish_date": "2025-11-17T14:10:00",
+      "keywords": [
+        "cao tốc",
+        "Vinh - Thanh Thủy",
+        "đầu tư công",
+        "giao thông",
+        "Nghệ An"
+      ],
+      "entities": {
+        "locations": ["Vinh", "Thanh Thủy", "Nghệ An"],
+        "people": [],
+        "organizations": ["Chính phủ", "Quốc hội"]
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": "24000000000000 VND",
+      "key_figures": []
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "3.txt",
+    "main_article": {
+      "title": "Hà Nội sắp có tuyến cầu vượt sông Đáy",
+      "slug": "ha-noi-sap-co-tuyen-cau-vuot-song-day",
+      "description": "Hà Nội phê duyệt phương án tuyến cầu Lê Thanh vượt sông Đáy dài 2,6km, kết nối tỉnh lộ 419 với đê Tả Đáy, mở rộng không gian đô thị phía Tây Nam.",
+      "author": "Phương Nhi",
+      "publish_date": "2025-11-17T14:29:00",
+      "keywords": ["cầu vượt", "sông Đáy", "Hà Nội", "giao thông", "đô thị"],
+      "entities": {
+        "locations": ["Hà Nội", "sông Đáy"],
+        "people": ["Dương Đức Tuấn"],
+        "organizations": ["UBND TP Hà Nội"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": ["Chiều dài: 2,6 km"]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "4.txt",
+    "main_article": {
+      "title": "Dữ liệu “sạch” mở đường cho dòng vốn đầu tư vào thị trường ứng dụng Việt Nam",
+      "slug": "du-lieu-sach-mo-duong-cho-dong-von-dau-tu-vao-thi-truong-ung-dung-viet-nam",
+      "description": "Thị trường ứng dụng Việt Nam bước vào giai đoạn trưởng thành với chất lượng dữ liệu tốt hơn và tỷ lệ gian lận giảm, thu hút dòng vốn đầu tư.",
+      "author": "Như Quỳnh",
+      "publish_date": "2025-11-18T10:28:00",
+      "keywords": ["ứng dụng", "mobile app", "dữ liệu", "đầu tư", "AppsFlyer"],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": [],
+        "organizations": ["AppsFlyer"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "5.txt",
+    "main_article": {
+      "title": "Cơ chế hỗ trợ mới để dịch vụ viễn thông tới vùng sâu vùng xa",
+      "slug": "co-che-ho-tro-moi-de-dich-vu-vien-thong-toi-vung-sau-vung-xa",
+      "description": "Nghị định 295/2025/NĐ-CP tạo cơ chế tài chính hỗ trợ doanh nghiệp viễn thông cung cấp dịch vụ công ích tại các khu vực khó khăn.",
+      "author": "Hạ Chi",
+      "publish_date": "2025-11-18T17:24:00",
+      "keywords": [
+        "viễn thông",
+        "vùng sâu vùng xa",
+        "Nghị định 295",
+        "chính sách",
+        "hỗ trợ"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": [],
+        "organizations": ["Chính phủ"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": ["Nghị định số 295/2025/NĐ-CP"]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "6.txt",
+    "main_article": {
+      "title": "AI khiến chip nhớ khan hiếm, thị trường ô tô và điện thoại đối mặt rủi ro",
+      "slug": "ai-khien-chip-nho-khan-hiem-thi-truong-o-to-va-dien-thoai-doi-mat-rui-ro",
+      "description": "Nhu cầu chip nhớ cho AI tăng cao gây thiếu hụt nguồn cung cho các ngành khác như ô tô và điện thoại thông minh, cảnh báo nguy cơ tăng giá.",
+      "author": "Hạ Chi",
+      "publish_date": "2025-11-18T08:39:00",
+      "keywords": ["chip nhớ", "AI", "thiếu hụt chip", "ô tô", "smartphone"],
+      "entities": {
+        "locations": [],
+        "people": [],
+        "organizations": ["CNBC"]
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": "2026",
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "7.txt",
+    "main_article": {
+      "title": "Đẩy mạnh ứng dụng AI thu thập, xử lý dữ liệu ngành khoa học và công nghệ",
+      "slug": "day-manh-ung-dung-ai-thu-thap-xu-ly-du-lieu-nganh-khoa-hoc-va-cong-nghe",
+      "description": "Bộ Khoa học và Công nghệ dự thảo Thông tư mới về thống kê ngành, nhấn mạnh việc ứng dụng AI để nâng cao tính chính xác và minh bạch của dữ liệu.",
+      "author": "Hạ Chi",
+      "publish_date": "2025-11-18T17:26:00",
+      "keywords": [
+        "AI",
+        "dữ liệu",
+        "khoa học công nghệ",
+        "thống kê",
+        "chuyển đổi số"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": [],
+        "organizations": ["Bộ Khoa học và Công nghệ"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "8.txt",
+    "main_article": {
+      "title": "95% khối lượng đã được lưu hành, khi nào Bitcoin sẽ bị khai thác hết?",
+      "slug": "95-phan-tram-khoi-luong-da-duoc-luu-hanh-khi-nao-bitcoin-se-bi-khai-thac-het",
+      "description": "Đã có 95% tổng lượng Bitcoin được khai thác. Số lượng còn lại dự kiến sẽ mất hơn 100 năm nữa để khai thác hết hoàn toàn.",
+      "author": "Bạch Dương",
+      "publish_date": "2025-11-18T10:23:00",
+      "keywords": [
+        "Bitcoin",
+        "tiền điện tử",
+        "khai thác",
+        "crypto",
+        "blockchain"
+      ],
+      "entities": {
+        "locations": [],
+        "people": ["Satoshi Nakamoto"],
+        "organizations": ["Mexc"]
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": "2140",
+      "investment_capital": null,
+      "key_figures": [
+        "95% đã khai thác",
+        "Còn lại 1,3 - 1,5 triệu BTC",
+        "Tổng cung 21 triệu BTC"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "9.txt",
+    "main_article": {
+      "title": "Chính phủ yêu cầu tháo gỡ khó khăn cho dự án Internet vệ tinh của SpaceX",
+      "slug": "chinh-phu-yeu-cau-thao-go-kho-khan-cho-du-an-internet-ve-tinh-cua-spacex",
+      "description": "Chính phủ chỉ đạo các bộ ngành tháo gỡ vướng mắc để dự án Internet vệ tinh Starlink của SpaceX có thể triển khai tại Việt Nam vào năm 2026.",
+      "author": "Hạ Chi",
+      "publish_date": "2025-11-18T08:42:00",
+      "keywords": [
+        "SpaceX",
+        "Starlink",
+        "Internet vệ tinh",
+        "Chính phủ",
+        "đầu tư"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": [],
+        "organizations": ["SpaceX", "Chính phủ", "Bộ Khoa học và Công nghệ"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2026",
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "10.txt",
+    "main_article": {
+      "title": "Hàng loạt khách sạn và cơ sở lưu trú Việt Nam bị tấn công qua email chứa virus",
+      "slug": "hang-loat-khach-san-va-co-so-luu-tru-viet-nam-bi-tan-cong-qua-email-chua-virus",
+      "description": "Chiến dịch ClickFix sử dụng mã độc tấn công khách sạn, homestay tại Việt Nam thông qua email giả mạo các nền tảng đặt phòng.",
+      "author": "Nam Anh",
+      "publish_date": "2025-11-17T15:08:00",
+      "keywords": ["an ninh mạng", "virus", "lừa đảo", "khách sạn", "du lịch"],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": ["Nam Anh"],
+        "organizations": ["Bkav", "Booking.com", "Expedia"]
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "10.txt",
+    "main_article": {
+      "title": "Hàng loạt khách sạn và cơ sở lưu trú Việt Nam bị tấn công qua email chứa virus",
+      "slug": "hang-loat-khach-san-va-co-so-luu-tru-viet-nam-bi-tan-cong-qua-email-chua-virus",
+      "description": "Chiến dịch tấn công mạng toàn cầu ClickFix đang nhắm vào các khách sạn, homestay tại Việt Nam bằng cách giả mạo email từ Booking.com, Expedia để phát tán mã độc.",
+      "author": "Nam Anh",
+      "publish_date": "2025-11-17T15:08:00",
+      "keywords": [
+        "an ninh mạng",
+        "ClickFix",
+        "mã độc",
+        "khách sạn",
+        "lừa đảo email"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": ["Nam Anh"],
+        "organizations": ["Bkav", "Booking.com", "Expedia"]
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "11.txt",
+    "main_article": {
+      "title": "Vì sao Bitcoin vừa lao về một trong những mốc thấp nhất kể từ đầu năm?",
+      "slug": "vi-sao-bitcoin-vua-lao-ve-mot-trong-nhung-moc-thap-nhat-ke-tu-dau-nam",
+      "description": "Giá Bitcoin giảm mạnh xuống mức 93.029 USD do dòng vốn rút khỏi ETF, động thái chốt lời của nhà đầu tư dài hạn và căng thẳng địa chính trị.",
+      "author": "Bạch Dương",
+      "publish_date": "2025-11-17T14:13:00",
+      "keywords": [
+        "Bitcoin",
+        "tiền điện tử",
+        "ETF",
+        "thị trường tài chính",
+        "giá Bitcoin"
+      ],
+      "entities": {
+        "locations": [],
+        "people": ["Bạch Dương"],
+        "organizations": ["CoinGecko"]
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": [
+        "Giá Bitcoin: 93.029 USD",
+        "Vốn hóa thị trường giảm từ 3,7 nghìn tỷ USD"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "Đài Loan dự tính thành lập kho Dự trữ Bitcoin",
+        "category": "Kinh tế số"
+      }
+    ]
+  },
+  {
+    "file_source": "12.txt",
+    "main_article": {
+      "title": "Việt Nam và cơ hội từ nền kinh tế tầm thấp",
+      "slug": "viet-nam-va-co-hoi-tu-nen-kinh-te-tam-thap",
+      "description": "Việt Nam có cơ hội lớn để trở thành trung tâm của nền kinh tế tầm thấp (độ cao dưới 1.000m) với sự tham gia của nhiều doanh nghiệp công nghệ.",
+      "author": "Ngô Huyền",
+      "publish_date": "2025-11-17T12:19:00",
+      "keywords": [
+        "kinh tế tầm thấp",
+        "drone",
+        "máy bay không người lái",
+        "công nghệ",
+        "Ban IV"
+      ],
+      "entities": {
+        "locations": ["Việt Nam", "Trung Quốc"],
+        "people": ["Ngô Huyền", "Trương Gia Bình"],
+        "organizations": ["Ban IV", "CT Group", "Viettel", "Phenikaa-X", "HTI"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": ["Độ cao khai thác: dưới 1.000m"]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "13.txt",
+    "main_article": {
+      "title": "Một công ty “đào” Bitcoin hàng đầu sắp rút lui khỏi lĩnh vực tiền điện tử, để chuyển sang AI",
+      "slug": "mot-cong-ty-dao-bitcoin-hang-dau-sap-rut-lui-khoi-linh-vuc-tien-dien-tu-de-chuyen-sang-ai",
+      "description": "Bitfarm lên kế hoạch dừng khai thác tiền điện tử để chuyển đổi sang vận hành trung tâm dữ liệu phục vụ trí tuệ nhân tạo (AI) vào năm 2027.",
+      "author": "Hạ Chi",
+      "publish_date": "2025-11-17T09:20:00",
+      "keywords": ["Bitfarm", "AI", "đào Bitcoin", "trung tâm dữ liệu", "GPU"],
+      "entities": {
+        "locations": ["Mỹ"],
+        "people": ["Hạ Chi"],
+        "organizations": ["Bitfarm"]
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": "2027",
+      "investment_capital": null,
+      "key_figures": ["12 trung tâm dữ liệu chuyên dụng"]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "14.txt",
+    "main_article": {
+      "title": "Microsoft, Amazon ủng hộ Quốc hội Mỹ hạn chế Nvidia xuất khẩu chip sang Trung Quốc",
+      "slug": "microsoft-amazon-ung-ho-quoc-hoi-my-han-che-nvidia-xuat-khau-chip-sang-trung-quoc",
+      "description": "Microsoft và Amazon ủng hộ dự luật siết chặt xuất khẩu chip của Nvidia sang Trung Quốc, dù Nvidia phản đối vì cho rằng đây là can thiệp thị trường.",
+      "author": "Bạch Dương",
+      "publish_date": "2025-11-17T09:18:00",
+      "keywords": [
+        "chip bán dẫn",
+        "Nvidia",
+        "Microsoft",
+        "Amazon",
+        "Trung Quốc",
+        "xuất khẩu công nghệ"
+      ],
+      "entities": {
+        "locations": ["Mỹ", "Trung Quốc"],
+        "people": ["Bạch Dương"],
+        "organizations": [
+          "Microsoft",
+          "Amazon",
+          "Nvidia",
+          "Quốc hội Mỹ",
+          "Anthropic"
+        ]
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": [
+      {
+        "title": "Samsung lên kế hoạch sản xuất chip 2nm vào cuối năm nay",
+        "category": "Công nghệ"
+      }
+    ]
+  },
+  {
+    "file_source": "15.txt",
+    "main_article": {
+      "title": "Rung lắc điều chỉnh nhẹ trong phiên, vốn ngoại có tín hiệu cân bằng trở lại",
+      "slug": "rung-lac-dieu-chinh-nhe-trong-phien-von-ngoai-co-tin-hieu-can-bang-tro-lai",
+      "description": "VN-Index gặp áp lực chốt lời nhưng vẫn đóng cửa tăng nhẹ sát mốc 1660 điểm nhờ nhóm cổ phiếu dẫn dắt và dòng vốn ngoại hỗ trợ.",
+      "author": "Kim Phong",
+      "publish_date": "2025-11-18T16:17:00",
+      "keywords": [
+        "chứng khoán",
+        "VN-Index",
+        "vốn ngoại",
+        "chốt lời",
+        "thị trường"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": ["Kim Phong"],
+        "organizations": ["FiinTrade"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": [
+        "VN-Index: sát 1660 điểm",
+        "Giảm điểm thấp nhất: -6.8 điểm (-0.41%)",
+        "VNM giảm: 2.25%",
+        "DIG giảm: 1.64%"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "16.txt",
+    "main_article": {
+      "title": "Ngành vật liệu xây dựng đang dư cung?",
+      "slug": "nganh-vat-lieu-xay-dung-dang-du-cung",
+      "description": "Ngành vật liệu xây dựng và thép đang đối mặt tình trạng dư cung. Tuy nhiên, kỳ vọng phục hồi vào quý 3/2025 nhờ thị trường bất động sản ấm lên.",
+      "author": "Thu Minh",
+      "publish_date": "2025-11-18T18:53:00",
+      "keywords": [
+        "vật liệu xây dựng",
+        "thép",
+        "dư cung",
+        "bất động sản",
+        "cổ phiếu"
+      ],
+      "entities": {
+        "locations": ["Việt Nam", "Trung Quốc"],
+        "people": ["Thu Minh"],
+        "organizations": ["BSC", "VinGroup", "VinMetal"]
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": "10000000000 VND (VinMetal)",
+      "key_figures": [
+        "Chu kỳ giảm giá: 3-5 năm",
+        "Kỳ vọng phục hồi: Quý 3/2025 - Quý 1/2026"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "17.txt",
+    "main_article": {
+      "title": "Lợi nhuận quý 3 nhóm Phi tài chính bật tăng mạnh 50%, chủ yếu nhờ lãi tỷ giá và bán tài sản",
+      "slug": "loi-nhuan-quy-3-nhom-phi-tai-chinh-bat-tang-manh-50-chu-yeu-nho-lai-ty-gia-va-ban-tai-san",
+      "description": "Lợi nhuận sau thuế toàn thị trường quý 3/2025 tăng 41,8%, dẫn đầu là nhóm Phi tài chính tăng 50,4% nhờ doanh thu tài chính và bán tài sản.",
+      "author": "Thu Minh",
+      "publish_date": "2025-11-13T20:48:00",
+      "keywords": [
+        "lợi nhuận",
+        "quý 3/2025",
+        "phi tài chính",
+        "chứng khoán",
+        "tỷ giá"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": ["Thu Minh"],
+        "organizations": ["FiinTrade"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": [
+        "Lợi nhuận toàn thị trường tăng: 41.8%",
+        "Lợi nhuận nhóm Phi tài chính tăng: 50.4%"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "18.txt",
+    "main_article": {
+      "title": "Quỹ Vanguard FTSE Emerging Markets rót bao tiền vào cổ phiếu Việt Nam sau nâng hạng?",
+      "slug": "quy-vanguard-ftse-emerging-markets-rot-bao-tien-vao-co-phieu-viet-nam-sau-nang-hang",
+      "description": "Quỹ Vanguard FTSE Emerging Markets dự kiến phân bổ khoảng 358,5 triệu USD vào thị trường Việt Nam sau khi được nâng hạng lên thị trường mới nổi.",
+      "author": "Thu Minh",
+      "publish_date": "2025-11-18T10:21:00",
+      "keywords": [
+        "Vanguard",
+        "FTSE Russell",
+        "nâng hạng thị trường",
+        "chứng khoán",
+        "vốn ngoại"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": ["Thu Minh"],
+        "organizations": ["Vanguard", "FTSE Russell", "Ủy ban Chứng khoán"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": "358500000 USD",
+      "key_figures": [
+        "Tổng tài sản ròng quỹ: 105.5 tỷ USD",
+        "Phân bổ dự kiến: 358.5 triệu USD"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "19.txt",
+    "main_article": {
+      "title": "Phó chủ tịch Fed thừa nhận phải đánh đổi trong vấn đề lãi suất",
+      "slug": "pho-chu-tich-fed-thua-nhan-phai-danh-doi-trong-van-de-lai-suat",
+      "description": "Phó chủ tịch Fed Philip Jefferson thừa nhận tình thế tiến thoái lưỡng nan giữa việc kiềm chế lạm phát và hỗ trợ thị trường lao động đang suy yếu.",
+      "author": "An Huy",
+      "publish_date": "2025-11-18T19:06:00",
+      "keywords": [
+        "Fed",
+        "lãi suất",
+        "lạm phát",
+        "kinh tế Mỹ",
+        "chính sách tiền tệ"
+      ],
+      "entities": {
+        "locations": ["Mỹ", "Washington DC"],
+        "people": ["An Huy", "Philip Jefferson", "Jerome Powell"],
+        "organizations": ["Fed", "Reuters"]
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": ["Mục tiêu lạm phát: 2%"]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "20.txt",
+    "main_article": {
+      "title": "Các ETF ngoại tiếp tục rút ròng khỏi Việt Nam",
+      "slug": "cac-etf-ngoai-tiep-tuc-rut-rong-khoi-viet-nam",
+      "description": "Dòng vốn ETF ngoại tiếp tục rút ròng khỏi thị trường chứng khoán Việt Nam với giá trị hơn 37 tỷ đồng trong tuần qua, tập trung chủ yếu ở quỹ Xtrackers FTSE Vietnam Swap ETF.",
+      "author": "Thu Minh",
+      "publish_date": "2025-11-18T18:59:00",
+      "keywords": ["ETF", "chứng khoán", "vốn ngoại", "rút ròng", "Xtrackers"],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": ["Thu Minh"],
+        "organizations": [
+          "Xtrackers FTSE Vietnam Swap ETF",
+          "VanEck Vietnam ETF"
+        ]
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": [
+        "Tổng giá trị rút ròng tuần: > 37 tỷ đồng",
+        "Xtrackers FTSE Vietnam Swap ETF: -33 tỷ đồng",
+        "VanEck Vietnam ETF: -2 tỷ đồng",
+        "Dòng vốn vào ròng (toàn thị trường): 19 tỷ đồng"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "21.txt",
+    "main_article": {
+      "title": "Giá vàng tiếp tục đổ dốc trong lúc chờ số liệu kinh tế Mỹ",
+      "slug": "gia-vang-tiep-tuc-do-doc-trong-luc-cho-so-lieu-kinh-te-my",
+      "description": "Giá vàng thế giới giảm mạnh do nhà đầu tư thận trọng chờ đợi dữ liệu kinh tế Mỹ và áp lực từ việc đồng USD tăng giá cùng động thái bán ròng của quỹ SPDR.",
+      "author": "Điệp Vũ",
+      "publish_date": "2025-11-18T08:05:00",
+      "keywords": ["giá vàng", "kinh tế Mỹ", "USD", "SPDR", "thị trường"],
+      "entities": {
+        "locations": ["Mỹ", "New York"],
+        "people": ["Điệp Vũ"],
+        "organizations": ["SPDR Gold Trust", "Chính phủ Mỹ"]
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": [
+        "Giá vàng giảm: 36,2 USD/oz (-0,89%)",
+        "Giá đóng cửa: 4.046,5 USD/oz"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "22.txt",
+    "main_article": {
+      "title": "Khối ngoại bán ròng thêm gần 1.000 tỷ",
+      "slug": "khoi-ngoai-ban-rong-them-gan-1000-ty",
+      "description": "Khối ngoại tiếp tục bán ròng gần 1.000 tỷ đồng, tuy nhiên VN-Index vẫn tăng điểm nhờ lực đẩy từ nhóm cổ phiếu ngân hàng và chứng khoán.",
+      "author": "Thu Minh",
+      "publish_date": "2025-11-17T23:16:00",
+      "keywords": [
+        "khối ngoại",
+        "bán ròng",
+        "VN-Index",
+        "ngân hàng",
+        "chứng khoán"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": ["Thu Minh"],
+        "organizations": []
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "Giá trị bán ròng: 975,5 tỷ đồng",
+        "Bán ròng khớp lệnh: 915,0 tỷ đồng",
+        "VN-Index tăng: 18,96 điểm",
+        "VN-Index đóng cửa: 1.654,42 điểm"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "23.txt",
+    "main_article": {
+      "title": "Nhà đầu tư nước ngoài quay lại mua cổ phiếu Trung Quốc",
+      "slug": "nha-dau-tu-nuoc-ngoai-quay-lai-mua-co-phieu-trung-quoc",
+      "description": "Dòng vốn ngoại đang quay trở lại thị trường cổ phiếu Trung Quốc với mức mua ròng cao nhất trong 4 năm qua, cho thấy sự thay đổi trong đánh giá của nhà đầu tư.",
+      "author": "Bình Minh",
+      "publish_date": "2025-11-17T22:06:00",
+      "keywords": ["cổ phiếu", "Trung Quốc", "vốn ngoại", "đầu tư", "IIF"],
+      "entities": {
+        "locations": ["Trung Quốc"],
+        "people": ["Bình Minh"],
+        "organizations": ["Financial Times", "Viện Tài chính Quốc tế (IIF)"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": "50600000000 USD",
+      "key_figures": [
+        "Vốn ròng (T1-T10/2025): 50,6 tỷ USD",
+        "Vốn ròng năm 2024: 11,4 tỷ USD"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "24.txt",
+    "main_article": {
+      "title": "Blog chứng khoán: Rung lắc rất nhẹ, cơ hội tạo đáy ngày càng lớn",
+      "slug": "blog-chung-khoan-rung-lac-rat-nhe-co-hoi-tao-day-ngay-cang-lon",
+      "description": "Thị trường chứng khoán có phiên tăng điểm thuyết phục với độ rộng tốt, VN-Index vượt MA20, mở ra kỳ vọng tạo đáy ngắn hạn.",
+      "author": "iTrader",
+      "publish_date": "2025-11-17T17:18:00",
+      "keywords": ["chứng khoán", "tạo đáy", "VN-Index", "MA20", "thanh khoản"],
+      "entities": {
+        "locations": [],
+        "people": ["iTrader"],
+        "organizations": []
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "VN-Index tăng: 1,16%",
+        "Tỷ lệ mã tăng/giảm: gấp 2,6 lần",
+        "Số mã tăng trên 1%: 37%"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "25.txt",
+    "main_article": {
+      "title": "S&P Global Ratings sở hữu 43,4% cổ phần tổ chức xếp hạng FiinRatings",
+      "slug": "sp-global-ratings-so-huu-43-4-co-phan-to-chuc-xep-hang-fiinratings",
+      "description": "Tổ chức xếp hạng tín nhiệm S&P Global Ratings đã hoàn tất việc mua 43,4% cổ phần của FiinRatings, mở rộng sự hiện diện tại thị trường Việt Nam.",
+      "author": "Thu Minh",
+      "publish_date": "2025-11-17T14:08:00",
+      "keywords": [
+        "S&P Global",
+        "FiinRatings",
+        "xếp hạng tín nhiệm",
+        "M&A",
+        "tài chính"
+      ],
+      "entities": {
+        "locations": ["Hà Nội", "Việt Nam"],
+        "people": ["Thu Minh"],
+        "organizations": [
+          "S&P Global Ratings",
+          "FiinRatings",
+          "Sở Tài chính Hà Nội",
+          "FiinGroup"
+        ]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": ["Tỷ lệ sở hữu: 43,4%"]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "26.txt",
+    "main_article": {
+      "title": "Điểm danh những cổ phiếu có tỷ lệ sở hữu Nhà nước trên 51% trên sàn chứng khoán",
+      "slug": "diem-danh-nhung-co-phieu-co-ty-le-so-huu-nha-nuoc-tren-51-tren-san-chung-khoan",
+      "description": "Bài viết phân tích danh sách các cổ phiếu có vốn Nhà nước chi phối và tác động của các chính sách kinh tế mới đối với nhóm doanh nghiệp này.",
+      "author": "Thu Minh",
+      "publish_date": "2025-11-17T14:06:00",
+      "keywords": [
+        "cổ phiếu",
+        "nhà nước",
+        "chứng khoán",
+        "sở hữu",
+        "khối ngoại"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": ["Thu Minh"],
+        "organizations": []
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": ["Tỷ lệ sở hữu Nhà nước: > 51%"]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "27.txt",
+    "main_article": {
+      "title": "Chứng khoán Mỹ giảm mạnh trước thềm báo cáo việc làm, giá dầu giảm nhẹ sau tin Nga",
+      "slug": "chung-khoan-my-giam-manh-truoc-them-bao-cao-viec-lam-gia-dau-giam-nhe-sau-tin-nga",
+      "description": "Thị trường Mỹ giảm điểm mạnh do làn sóng bán tháo cổ phiếu công nghệ và tâm lý chờ đợi báo cáo việc làm; giá dầu giảm nhẹ khi nguồn cung từ Nga ổn định lại.",
+      "author": "Bình Minh",
+      "publish_date": "2025-11-18T08:28:00",
+      "keywords": [
+        "chứng khoán Mỹ",
+        "giá dầu",
+        "việc làm",
+        "công nghệ",
+        "Nvidia"
+      ],
+      "entities": {
+        "locations": ["Mỹ", "Nga", "Ukraine"],
+        "people": ["Bình Minh"],
+        "organizations": ["Nvidia", "Dow Jones"]
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": ["Dow Jones giảm: 557 điểm"]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "28.txt",
+    "main_article": {
+      "title": "Chứng khoán Mỹ thoát hiểm nhờ lực bắt đáy, giá dầu tăng 2%",
+      "slug": "chung-khoan-my-thoat-hiem-nho-luc-bat-day-gia-dau-tang-2",
+      "description": "Lực cầu bắt đáy nhóm cổ phiếu công nghệ giúp chứng khoán Mỹ hồi phục; giá dầu tăng do lo ngại gián đoạn nguồn cung từ Nga.",
+      "author": "Điệp Vũ",
+      "publish_date": "2025-11-15T09:05:00",
+      "keywords": [
+        "chứng khoán Mỹ",
+        "bắt đáy",
+        "giá dầu",
+        "Nasdaq",
+        "công nghệ"
+      ],
+      "entities": {
+        "locations": ["Mỹ", "Nga", "Ukraine"],
+        "people": ["Điệp Vũ"],
+        "organizations": ["Nasdaq"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "Giá dầu tăng: > 1 USD/thùng",
+        "Nasdaq tăng: 0,13%",
+        "Nasdaq đạt: 22.900,59 điểm"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "29.txt",
+    "main_article": {
+      "title": "Chứng khoán Mỹ giảm mạnh nhất 1 tháng vì nỗi lo lãi suất, giá dầu nhích lên",
+      "slug": "chung-khoan-my-giam-manh-nhat-1-thang-vi-noi-lo-lai-suat-gia-dau-nhich-len",
+      "description": "Lo ngại về lãi suất và áp lực bán tháo cổ phiếu công nghệ khiến Dow Jones giảm mạnh nhất trong một tháng; giá dầu có sự hồi phục nhẹ.",
+      "author": "Bình Minh",
+      "publish_date": "2025-11-14T08:17:00",
+      "keywords": [
+        "chứng khoán Mỹ",
+        "lãi suất",
+        "giá dầu",
+        "Dow Jones",
+        "công nghệ"
+      ],
+      "entities": {
+        "locations": ["Mỹ"],
+        "people": ["Bình Minh"],
+        "organizations": ["Dow Jones", "Bloomberg"]
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "Dow Jones giảm: 797,6 điểm (-1,65%)",
+        "Dow Jones còn: 47.457,22 điểm"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "30.txt",
+    "main_article": {
+      "title": "Chứng khoán Mỹ lập kỷ lục mới, giá dầu lao dốc 4% sau dự báo của OPEC",
+      "slug": "chung-khoan-my-lap-ky-luc-moi-gia-dau-lao-doc-4-sau-du-bao-cua-opec",
+      "description": "Dow Jones lập kỷ lục mới trong khi giá dầu giảm mạnh do dự báo dư thừa nguồn cung năm 2026 từ OPEC và lo ngại về nhu cầu.",
+      "author": "Bình Minh",
+      "publish_date": "2025-11-13T08:12:00",
+      "keywords": ["chứng khoán Mỹ", "Dow Jones", "giá dầu", "OPEC", "kinh tế"],
+      "entities": {
+        "locations": ["Mỹ"],
+        "people": ["Bình Minh"],
+        "organizations": ["OPEC", "Dow Jones", "Nasdaq", "NYSE"]
+      },
+      "sentiment": "mixed"
+    },
+    "key_statistics": {
+      "target_year": "2026",
+      "investment_capital": null,
+      "key_figures": [
+        "Giá dầu giảm: 2,5 USD/thùng (-4%)",
+        "Dự báo dư cung: năm 2026"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "31.txt",
+    "main_article": {
+      "title": "Cổ phiếu blue-chips dẫn sóng, VN-Index đột phá mốc 1650 điểm",
+      "slug": "co-phieu-blue-chips-dan-song-vn-index-dot-pha-moc-1650-diem",
+      "description": "Dòng tiền đổ vào nhóm cổ phiếu blue-chips giúp VN-Index vượt mốc 1650 điểm với thanh khoản tích cực, bất chấp áp lực chốt lời nhẹ.",
+      "author": "Kim Phong",
+      "publish_date": "2025-11-17T12:05:00",
+      "keywords": [
+        "blue-chips",
+        "VN-Index",
+        "chứng khoán",
+        "dòng tiền",
+        "tăng điểm"
+      ],
+      "entities": {
+        "locations": [],
+        "people": ["Kim Phong"],
+        "organizations": ["HoSE"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "VN-Index tăng: 1% (16,39 điểm)",
+        "Mức điểm: 1651,85 điểm"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "32.txt",
+    "main_article": {
+      "title": "Xu thế dòng tiền: Không xuất hiện bán tháo, thị trường đã “kiệt cung”?",
+      "slug": "xu-the-dong-tien-khong-xuat-hien-ban-thao-thi-truong-da-kiet-cung",
+      "description": "Thanh khoản thị trường xuống thấp khi VN-Index mất mốc 1600 điểm, cho thấy áp lực bán tháo không xảy ra, mở ra kỳ vọng phục hồi.",
+      "author": "Nguyễn Hoàng",
+      "publish_date": "2025-11-16T10:05:00",
+      "keywords": [
+        "dòng tiền",
+        "thanh khoản",
+        "bán tháo",
+        "VN-Index",
+        "kiệt cung"
+      ],
+      "entities": {
+        "locations": [],
+        "people": ["Nguyễn Hoàng"],
+        "organizations": []
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "33.txt",
+    "main_article": {
+      "title": "Cung cầu cân bằng, VN-Index đã “chắc chân” trên mốc 1600 điểm?",
+      "slug": "cung-cau-can-bang-vn-index-da-chac-chan-tren-moc-1600-diem",
+      "description": "VN-Index giữ vững mốc 1600 điểm với biên độ dao động hẹp và thanh khoản thấp, cho thấy trạng thái cân bằng giữa cung và cầu.",
+      "author": "Kim Phong",
+      "publish_date": "2025-11-14T15:33:00",
+      "keywords": [
+        "cung cầu",
+        "VN-Index",
+        "thanh khoản",
+        "chứng khoán",
+        "cân bằng"
+      ],
+      "entities": {
+        "locations": [],
+        "people": ["Kim Phong"],
+        "organizations": ["HoSE"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "VN-Index tăng: 4,02 điểm (+0,25%)",
+        "Thanh khoản HoSE: 18.158 tỷ đồng (giảm 8%)",
+        "Thanh khoản tuần giảm: 21%"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "34.txt",
+    "main_article": {
+      "title": "Blog chứng khoán: Ít hàng lướt sóng",
+      "slug": "blog-chung-khoan-it-hang-luot-song",
+      "description": "Lượng cổ phiếu bắt đáy về tài khoản không gây áp lực bán mạnh, thị trường dao động biên độ nhỏ trong bối cảnh thanh khoản thấp.",
+      "author": "iTrader",
+      "publish_date": "2025-11-13T16:27:00",
+      "keywords": ["lướt sóng", "bắt đáy", "T+", "thanh khoản", "chứng khoán"],
+      "entities": {
+        "locations": [],
+        "people": ["iTrader"],
+        "organizations": []
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "35.txt",
+    "main_article": {
+      "title": "“Găm hàng” bắt đáy, thị trường cân bằng trên nền thanh khoản thấp",
+      "slug": "gam-hang-bat-day-thi-truong-can-bang-tren-nen-thanh-khoan-thap",
+      "description": "Nhà đầu tư có xu hướng nắm giữ cổ phiếu thay vì bán ra, giúp thị trường duy trì trạng thái cân bằng dù thanh khoản ở mức thấp.",
+      "author": "Kim Phong",
+      "publish_date": "2025-11-13T15:25:00",
+      "keywords": [
+        "bắt đáy",
+        "găm hàng",
+        "thanh khoản",
+        "VN-Index",
+        "cân bằng"
+      ],
+      "entities": {
+        "locations": [],
+        "people": ["Kim Phong"],
+        "organizations": []
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "VN-Index giảm: 0,42 điểm (-0,03%)",
+        "Số mã tăng: 163",
+        "Số mã giảm: 138"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "36.txt",
+    "main_article": {
+      "title": "Blog chứng khoán: “Bear-trap” dưới 1600 điểm?",
+      "slug": "blog-chung-khoan-bear-trap-duoi-1600-diem",
+      "description": "VN-Index phục hồi vượt 1600 điểm và MA100, biến nhịp giảm trước đó thành bẫy giảm giá (bear-trap) với tín hiệu tích cực từ lực bán yếu.",
+      "author": "iTrader",
+      "publish_date": "2025-11-12T16:27:00",
+      "keywords": ["bear-trap", "VN-Index", "phục hồi", "MA100", "chứng khoán"],
+      "entities": {
+        "locations": [],
+        "people": ["iTrader"],
+        "organizations": ["HSX", "HNX"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "Thanh khoản trung bình 2 phiên trước: 19,6 nghìn tỷ/ngày"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "37.txt",
+    "main_article": {
+      "title": "Dòng tiền hào hứng đẩy giá, VN-Index tăng mạnh nhất 30 phiên",
+      "slug": "dong-tien-hao-hung-day-gia-vn-index-tang-manh-nhat-30-phien",
+      "description": "Lực cầu mạnh mẽ cùng sự dẫn dắt của nhóm cổ phiếu trụ đã giúp VN-Index tăng 2,4%, mức tăng cao nhất kể từ đầu tháng 10.",
+      "author": "Kim Phong",
+      "publish_date": "2025-11-12T15:32:00",
+      "keywords": [
+        "dòng tiền",
+        "VN-Index",
+        "tăng mạnh",
+        "cổ phiếu trụ",
+        "HoSE"
+      ],
+      "entities": {
+        "locations": [],
+        "people": ["Kim Phong"],
+        "organizations": ["HoSE"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "VN-Index tăng: 2,4%",
+        "Số mã tăng: 268",
+        "Số mã tăng trên 2%: 108"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "38.txt",
+    "main_article": {
+      "title": "Áp lực bán yếu, thị trường phục hồi kỹ thuật",
+      "slug": "ap-luc-ban-yeu-thi-truong-phuc-hoi-ky-thuat",
+      "description": "Thị trường có phiên phục hồi kỹ thuật khi áp lực bán giảm bớt, VN-Index nỗ lực kiểm định lại mốc 1600 điểm.",
+      "author": "Kim Phong",
+      "publish_date": "2025-11-11T15:39:00",
+      "keywords": [
+        "phục hồi kỹ thuật",
+        "áp lực bán",
+        "VN-Index",
+        "1600 điểm",
+        "chứng khoán"
+      ],
+      "entities": {
+        "locations": [],
+        "people": ["Kim Phong"],
+        "organizations": []
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "39.txt",
+    "main_article": {
+      "title": "Bất động sản công nghiệp Việt Nam: từ lợi thế chi phí thấp đến chu kỳ phát triển chất lượng",
+      "slug": "bat-dong-san-cong-nghiep-viet-nam-tu-loi-the-chi-phi-thap-den-chu-ky-phat-trien-chat-luong",
+      "description": "Việt Nam đang chuyển mình thành điểm tựa chuỗi cung ứng quốc tế, thu hút đầu tư bất động sản công nghiệp nhờ hạ tầng hiện đại và định hướng phát triển bền vững.",
+      "author": "Bình Dương",
+      "publish_date": "2025-11-18T18:00:00",
+      "keywords": [
+        "bất động sản công nghiệp",
+        "chuỗi cung ứng",
+        "đầu tư",
+        "hạ tầng",
+        "phát triển bền vững"
+      ],
+      "entities": {
+        "locations": ["Việt Nam", "Bình Dương", "TPHCM"],
+        "people": ["Bình Dương"],
+        "organizations": ["Avison Young", "Kinh tế Sài Gòn Online"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": [
+      {
+        "title": "Metro Bến Thành – Tham Lương có thể tăng vốn hơn 4.000 tỉ đồng",
+        "category": "Quy hoạch / Hạ tầng"
+      },
+      {
+        "title": "Đề xuất sử dụng năng lượng tái tạo khi thành lập khu đô thị mới",
+        "category": "Quy hoạch / Hạ tầng"
+      },
+      {
+        "title": "TPHCM mời gọi đầu tư, cải tạo 19 chung cư cũ",
+        "category": "Sự kiện - Vấn đề"
+      },
+      {
+        "title": "Giá vàng miếng giảm thêm, về 149,3 triệu đồng/lượng",
+        "category": "Thương mại - Dịch vụ"
+      },
+      {
+        "title": "Xuất khẩu thủy sản cả năm có thể đạt 10,5 tỉ đô la",
+        "category": "Kinh tế"
+      }
+    ]
+  },
+  {
+    "file_source": "40.txt",
+    "main_article": {
+      "title": "Metro Bến Thành – Tham Lương có thể tăng vốn hơn 4.000 tỉ đồng",
+      "slug": "metro-ben-thanh-tham-luong-co-the-tang-von-hon-4000-ti-dong",
+      "description": "Ban Quản lý Đường sắt đô thị TPHCM đề xuất điều chỉnh tổng mức đầu tư tuyến metro số 2 lên hơn 52.000 tỉ đồng do cập nhật công nghệ và biến động giá.",
+      "author": "Bình Dương",
+      "publish_date": "2025-11-18T20:30:00",
+      "keywords": [
+        "metro số 2",
+        "Bến Thành - Tham Lương",
+        "vốn đầu tư",
+        "TPHCM",
+        "đường sắt đô thị"
+      ],
+      "entities": {
+        "locations": ["TPHCM", "Bến Thành", "Tham Lương"],
+        "people": [],
+        "organizations": [
+          "Ban Quản lý Đường sắt đô thị TPHCM (MAUR)",
+          "UBND TPHCM",
+          "Sở Xây dựng"
+        ]
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": "2026",
+      "investment_capital": "52047000000000 VND",
+      "key_figures": [
+        "Tăng vốn: > 4.000 tỉ đồng",
+        "Tổng mức đầu tư mới: 52.047 tỉ đồng"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "TPHCM sẽ khởi công metro đi Cần Giờ vào dịp 19-12",
+        "category": "Quy hoạch / Hạ tầng"
+      },
+      {
+        "title": "TPHCM ‘chốt’ khởi công tuyến metro số 2 vào đầu năm 2026",
+        "category": "Quy hoạch / Hạ tầng"
+      }
+    ]
+  },
+  {
+    "file_source": "41.txt",
+    "main_article": {
+      "title": "Đề xuất sử dụng năng lượng tái tạo khi thành lập khu đô thị mới",
+      "slug": "de-xuat-su-dung-nang-luong-tai-tao-khi-thanh-lap-khu-do-thi-moi",
+      "description": "Bộ Xây dựng đề xuất các khu đô thị mới phải sử dụng năng lượng tái tạo, xây dựng công trình xanh và tái sử dụng nước trong dự thảo Nghị định về phân loại đô thị.",
+      "author": "Tường Anh",
+      "publish_date": "2025-11-18T20:29:00",
+      "keywords": [
+        "năng lượng tái tạo",
+        "khu đô thị mới",
+        "Bộ Xây dựng",
+        "công trình xanh",
+        "đô thị thông minh"
+      ],
+      "entities": {
+        "locations": [],
+        "people": [],
+        "organizations": ["Bộ Xây dựng"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": [
+      {
+        "title": "Thiếu không gian xanh, nông nghiệp đô thị mở hướng đầu tư mới",
+        "category": "Quy hoạch / Hạ tầng"
+      }
+    ]
+  },
+  {
+    "file_source": "42.txt",
+    "main_article": {
+      "title": "Tin nổi bật: TPHCM mời gọi đầu tư, cải tạo 19 chung cư cũ | Đề xuất tăng vốn metro Bến Thành – Tham Lương",
+      "slug": "tin-noi-bat-tphcm-moi-goi-dau-tu-cai-tao-19-chung-cu-cu",
+      "description": "Bản tin tổng hợp các sự kiện nổi bật: TPHCM mời gọi đầu tư cải tạo chung cư cũ, điều chỉnh vốn metro số 2 và các vấn đề về hiệu quả năng lượng.",
+      "author": "Thùy Linh",
+      "publish_date": "2025-11-18T19:32:00",
+      "keywords": [
+        "chung cư cũ",
+        "metro số 2",
+        "năng lượng hiệu quả",
+        "TPHCM",
+        "đầu tư"
+      ],
+      "entities": {
+        "locations": ["TPHCM", "Khánh Hòa"],
+        "people": [],
+        "organizations": []
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": ["19 chung cư cũ cần cải tạo"]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "43.txt",
+    "main_article": {
+      "title": "Giá vàng miếng giảm thêm, về 149,3 triệu đồng/lượng",
+      "slug": "gia-vang-mieng-giam-them-ve-149-3-trieu-dong-luong",
+      "description": "Giá vàng miếng SJC tiếp tục giảm thêm 500.000 đồng/lượng, xuống mức 149,3 triệu đồng/lượng vào chiều ngày 18/11.",
+      "author": "Trúc Đào",
+      "publish_date": "2025-11-18T17:17:00",
+      "keywords": [
+        "giá vàng",
+        "SJC",
+        "vàng miếng",
+        "giảm giá",
+        "thị trường vàng"
+      ],
+      "entities": {
+        "locations": [],
+        "people": [],
+        "organizations": ["SJC", "DOJI"]
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "Giá bán: 149,3 triệu đồng/lượng",
+        "Giá mua: 147,3 triệu đồng/lượng",
+        "Giảm: 500.000 đồng/lượng"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "Giá vàng sáng 15-11 tiếp tục giảm 2,2 triệu đồng/lượng",
+        "category": "Tài chính"
+      },
+      {
+        "title": "Vàng SJC mất mốc 150 triệu đồng/lượng",
+        "category": "Tài chính"
+      }
+    ]
+  },
+  {
+    "file_source": "44.txt",
+    "main_article": {
+      "title": "VN-Index giữ sắc xanh dù số mã giảm áp đảo",
+      "slug": "vn-index-giu-sac-xanh-du-so-ma-giam-ap-dao",
+      "description": "VN-Index kết phiên 18/11 tăng gần 6 điểm dù số mã giảm giá chiếm ưu thế trên sàn HOSE, cho thấy tình trạng 'xanh vỏ đỏ lòng'.",
+      "author": "Thùy Linh",
+      "publish_date": "2025-11-18T16:39:00",
+      "keywords": [
+        "VN-Index",
+        "chứng khoán",
+        "HOSE",
+        "xanh vỏ đỏ lòng",
+        "thanh khoản"
+      ],
+      "entities": {
+        "locations": [],
+        "people": [],
+        "organizations": ["HOSE"]
+      },
+      "sentiment": "mixed"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "VN-Index: 1.659,92 điểm",
+        "Tăng: 5,5 điểm",
+        "Số mã giảm (HOSE): 161",
+        "Số mã tăng (HOSE): 152"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "45.txt",
+    "main_article": {
+      "title": "Tổng Bí thư: Tầm nhìn mới của TPHCM là ‘siêu đô thị quốc tế’ của Đông Nam Á",
+      "slug": "tong-bi-thu-tam-nhin-moi-cua-tphcm-la-sieu-do-thi-quoc-te-cua-dong-nam-a",
+      "description": "Tổng Bí thư Tô Lâm định hướng TPHCM phát triển thành siêu đô thị quốc tế và trung tâm tài chính của khu vực Đông Nam Á.",
+      "author": "Gia Nghi",
+      "publish_date": "2025-06-18T15:42:00",
+      "keywords": [
+        "TPHCM",
+        "siêu đô thị",
+        "Tổng Bí thư",
+        "Tô Lâm",
+        "trung tâm tài chính"
+      ],
+      "entities": {
+        "locations": ["TPHCM", "Đông Nam Á", "Bà Rịa-Vũng Tàu", "Bình Dương"],
+        "people": ["Tô Lâm"],
+        "organizations": ["Trung ương Đảng", "Thành ủy TPHCM"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": "7000000000 USD",
+      "key_figures": ["Đầu tư dự kiến trung tâm tài chính: 7 tỉ USD"]
+    },
+    "related_articles": [
+      {
+        "title": "Doanh nghiệp nhà nước TPHCM: Không nên lặp lại mô hình cũ",
+        "category": "Sự kiện - Vấn đề"
+      }
+    ]
+  },
+  {
+    "file_source": "46.txt",
+    "main_article": {
+      "title": "Chính phủ cùng doanh nghiệp khơi thông nguồn lực để đạt tăng trưởng hai con số",
+      "slug": "chinh-phu-cung-doanh-nghiep-khoi-thong-nguon-luc-de-dat-tang-truong-hai-con-so",
+      "description": "Chính phủ tổ chức gặp gỡ cộng đồng doanh nghiệp để tháo gỡ vướng mắc thể chế, hướng tới mục tiêu tăng trưởng kinh tế hai con số trong năm 2025.",
+      "author": "Nguyên Tân",
+      "publish_date": "2025-02-10T12:30:00",
+      "keywords": [
+        "tăng trưởng kinh tế",
+        "doanh nghiệp",
+        "Chính phủ",
+        "tháo gỡ vướng mắc",
+        "thể chế"
+      ],
+      "entities": {
+        "locations": [],
+        "people": ["Phạm Minh Chính"],
+        "organizations": ["Chính phủ"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": ["Mục tiêu tăng trưởng GRDP các địa phương: không dưới 8%"]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "47.txt",
+    "main_article": {
+      "title": "Cần thu hút FDI chất lượng cao để nâng cao năng lực doanh nghiệp Việt Nam",
+      "slug": "can-thu-hut-fdi-chat-luong-cao-de-nang-cao-nang-luc-doanh-nghiep-viet-nam",
+      "description": "Việt Nam định hướng thu hút FDI vào các lĩnh vực công nghệ cao (AI, bán dẫn) và thúc đẩy chuyển giao công nghệ để phát triển doanh nghiệp nội địa.",
+      "author": "Lê Hoàng",
+      "publish_date": "2025-02-09T07:00:00",
+      "keywords": [
+        "FDI",
+        "công nghệ cao",
+        "doanh nghiệp Việt Nam",
+        "công nghiệp hỗ trợ",
+        "bán dẫn"
+      ],
+      "entities": {
+        "locations": ["Việt Nam", "Đồng Nai", "TPHCM", "Hà Nội", "Đà Nẵng"],
+        "people": [],
+        "organizations": []
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": [
+      {
+        "title": "Giải ngân vốn FDI cao kỷ lục trong năm 2024",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "48.txt",
+    "main_article": {
+      "title": "Chuẩn bị nền tảng cho kỷ nguyên vươn mình của kinh tế Việt Nam",
+      "slug": "chuan-bi-nen-tang-cho-ky-nguyen-vuon-minh-cua-kinh-te-viet-nam",
+      "description": "Bộ trưởng Nguyễn Chí Dũng nhấn mạnh tầm quan trọng của năm 2025 trong việc hoàn thành kế hoạch 5 năm và chuẩn bị nền tảng cho kỷ nguyên phát triển mới của đất nước.",
+      "author": "Vân Phong",
+      "publish_date": "2025-01-31T07:00:00",
+      "keywords": [
+        "kỷ nguyên vươn mình",
+        "kinh tế Việt Nam",
+        "Kế hoạch 5 năm",
+        "cải cách",
+        "Nguyễn Chí Dũng"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": ["Nguyễn Chí Dũng"],
+        "organizations": ["Bộ Kế hoạch và Đầu tư"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "49.txt",
+    "main_article": {
+      "title": "Chính phủ sẽ giảm 5 bộ, ngành và 3 cơ quan trực thuộc",
+      "slug": "chinh-phu-se-giam-5-bo-nganh-va-3-co-quan-truc-thuoc",
+      "description": "Trung ương Đảng thống nhất phương án tinh gọn bộ máy Chính phủ nhiệm kỳ 2021-2026, dự kiến giảm 5 bộ ngành và biên chế giảm khoảng 20%.",
+      "author": "Hoài Hương",
+      "publish_date": "2025-01-25T19:37:00",
+      "keywords": [
+        "tinh gọn bộ máy",
+        "Chính phủ",
+        "cải cách hành chính",
+        "biên chế",
+        "Trung ương Đảng"
+      ],
+      "entities": {
+        "locations": [],
+        "people": [],
+        "organizations": ["Chính phủ", "Trung ương Đảng"]
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": "2026",
+      "investment_capital": null,
+      "key_figures": [
+        "Còn lại: 14 bộ, 3 cơ quan ngang bộ",
+        "Giảm: 5 bộ/ngành",
+        "Giảm biên chế: 20%"
+      ]
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "50.txt",
+    "main_article": {
+      "title": "Kỷ nguyên mới phát triển kinh tế (Bài 3): ‘Chắp cánh’ cho kinh tế tư nhân",
+      "slug": "ky-nguyen-moi-phat-trien-kinh-te-bai-3-chap-canh-cho-kinh-te-tu-nhan",
+      "description": "Để kinh tế tư nhân thực sự là động lực, cơ quan quản lý cần mở rộng cơ hội kinh doanh và đảm bảo chính sách thông suốt cho mọi thành phần kinh tế.",
+      "author": "Vân Phong",
+      "publish_date": "2024-12-04T19:00:00",
+      "keywords": [
+        "kinh tế tư nhân",
+        "phát triển kinh tế",
+        "chính sách",
+        "doanh nghiệp",
+        "kỷ nguyên mới"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": [],
+        "organizations": []
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": [
+      {
+        "title": "Kỷ nguyên mới phát triển kinh tế (Bài 1): Giải bài toán năng suất lao động để vượt ‘bẫy thu nhập trung bình’",
+        "category": "Kinh tế"
+      },
+      {
+        "title": "Kỷ nguyên mới phát triển kinh tế (Bài 2): Chuẩn bị cho thời kỳ hậu ‘dân số vàng’ như thế nào?",
+        "category": "Kinh tế"
+      }
+    ]
+  },
+  {
+    "file_source": "51.txt",
+    "main_article": {
+      "title": "Tổng Bí thư Tô Lâm: Chuyển đổi số không chỉ là cơ hội mà là trách nhiệm của mỗi doanh nghiệp",
+      "slug": "tong-bi-thu-to-lam-chuyen-doi-so-khong-chi-la-co-hoi-ma-la-trach-nhiem-cua-moi-doanh-nghiep",
+      "description": "Tổng Bí thư Tô Lâm nhấn mạnh mục tiêu đưa Việt Nam vào top 3 Đông Nam Á về công nghệ số và tạo ra 5 doanh nghiệp công nghệ tầm cỡ quốc tế vào năm 2030.",
+      "author": "Thành Tín",
+      "publish_date": "2025-01-16T07:32:00",
+      "keywords": [
+        "chuyển đổi số",
+        "Tô Lâm",
+        "doanh nghiệp công nghệ",
+        "Make in Viet Nam",
+        "Đông Nam Á"
+      ],
+      "entities": {
+        "locations": ["Việt Nam", "Hà Nội", "Đông Nam Á"],
+        "people": ["Tô Lâm"],
+        "organizations": ["Bộ Thông tin và Truyền thông"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2030",
+      "investment_capital": null,
+      "key_figures": [
+        "Top 3 nước dẫn đầu ĐNA về công nghệ số",
+        "Ít nhất 5 doanh nghiệp công nghệ số quốc tế"
+      ]
+    },
+    "related_articles": [
+      { "title": "Chuyển đổi số để ‘rượt’ doanh số", "category": "Kinh doanh" },
+      {
+        "title": "Thủ tướng yêu cầu hoàn thành đề án chuyển đổi số trước cuối năm 2025",
+        "category": "Kinh tế số"
+      }
+    ]
+  },
+  {
+    "file_source": "52.txt",
+    "main_article": {
+      "title": "Nhiều giải pháp để khuyến khích đổi mới sáng tạo",
+      "slug": "nhieu-giai-phap-de-khuyen-khich-doi-moi-sang-tao",
+      "description": "Hội nghị toàn quốc triển khai Nghị quyết 57-NQ/TW tập trung vào các giải pháp đột phá phát triển khoa học, công nghệ và chuyển đổi số quốc gia.",
+      "author": "Thùy Linh",
+      "publish_date": "2025-01-13T12:00:00",
+      "keywords": [
+        "đổi mới sáng tạo",
+        "khoa học công nghệ",
+        "chuyển đổi số",
+        "Nghị quyết 57",
+        "Ban Kinh tế Trung ương"
+      ],
+      "entities": {
+        "locations": ["Bình Dương"],
+        "people": ["Thái Thanh Quý"],
+        "organizations": ["Ban Kinh tế Trung ương", "Bộ Chính trị"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": ["Khu công nghệ thông tin Bình Dương: 220 hecta"]
+    },
+    "related_articles": [
+      {
+        "title": "Sắp có khu công nghệ thông tin, đổi mới sáng tạo rộng 220 hecta ở Bình Dương",
+        "category": "Quy hoạch"
+      },
+      {
+        "title": "Đề xuất thành lập quỹ đầu tư, hỗ trợ đổi mới sáng tạo",
+        "category": "Chính sách"
+      }
+    ]
+  },
+  {
+    "file_source": "53.txt",
+    "main_article": {
+      "title": "VN-Index lấy lại mốc 1.650 điểm",
+      "slug": "vn-index-lay-lai-moc-1650-diem",
+      "description": "VN-Index tăng gần 19 điểm, đóng cửa tại 1.654,42 điểm với sắc xanh chiếm ưu thế trên sàn HOSE và thanh khoản đạt hơn 21.500 tỉ đồng.",
+      "author": "Thùy Linh",
+      "publish_date": "2025-11-17T16:09:00",
+      "keywords": [
+        "VN-Index",
+        "chứng khoán",
+        "HOSE",
+        "tăng điểm",
+        "thanh khoản"
+      ],
+      "entities": {
+        "locations": [],
+        "people": [],
+        "organizations": ["HOSE"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "VN-Index: 1.654,42 điểm (+18,96 điểm)",
+        "Số mã tăng (HOSE): 227",
+        "Giá trị giao dịch: > 21.500 tỉ đồng"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "Tăng hơn 38 điểm, VN-Index lấy lại mốc 1.630 điểm",
+        "category": "Tài chính"
+      },
+      { "title": "VN-Index tiếp tục giảm gần 19 điểm", "category": "Tài chính" }
+    ]
+  },
+  {
+    "file_source": "54.txt",
+    "main_article": {
+      "title": "Phía sau việc ngân hàng áp đảo sân chơi trái phiếu doanh nghiệp",
+      "slug": "phia-sau-viec-ngan-hang-ap-dao-san-choi-trai-phieu-doanh-nghiep",
+      "description": "Thị trường trái phiếu doanh nghiệp đạt 1,27 triệu tỉ đồng nhưng bị chi phối bởi nhóm ngân hàng, gây khó khăn cho doanh nghiệp trong việc huy động vốn dài hạn.",
+      "author": "Triệu Minh",
+      "publish_date": "2025-11-17T07:00:00",
+      "keywords": [
+        "trái phiếu doanh nghiệp",
+        "ngân hàng",
+        "vốn dài hạn",
+        "tín dụng",
+        "thị trường vốn"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": [],
+        "organizations": []
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": "1270000000000000 VND",
+      "key_figures": [
+        "Quy mô thị trường TPDN: 1,27 triệu tỉ đồng",
+        "Tăng trưởng: 6% so với cuối 2024"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "Huy động 1 triệu tỉ đồng từ trái phiếu trong năm nay cho nền kinh tế",
+        "category": "Tài chính"
+      },
+      {
+        "title": "Phát hiện nhiều sai phạm trong thị trường trái phiếu doanh nghiệp",
+        "category": "Tài chính"
+      }
+    ]
+  },
+  {
+    "file_source": "55.txt",
+    "main_article": {
+      "title": "Sẽ thí điểm cơ chế bán khống cổ phiếu từ 2026",
+      "slug": "se-thi-diem-co-che-ban-khong-co-phieu-tu-2026",
+      "description": "Bộ Tài chính dự kiến triển khai thí điểm cơ chế bán khống cổ phiếu có kiểm soát sớm nhất từ năm 2026 nhằm phục vụ mục tiêu nâng hạng thị trường chứng khoán.",
+      "author": "Bình Dương",
+      "publish_date": "2025-11-13T13:12:00",
+      "keywords": [
+        "bán khống",
+        "cổ phiếu",
+        "Bộ Tài chính",
+        "nâng hạng thị trường",
+        "chứng khoán"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": [],
+        "organizations": ["Bộ Tài chính", "Thủ tướng Chính phủ"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2026",
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": [
+      {
+        "title": "Doanh nghiệp chứng khoán tăng tốc gọi vốn giữa nhịp chững thị trường",
+        "category": "Tài chính"
+      },
+      {
+        "title": "Chứng khoán tháng 11 vẫn trong pha điều chỉnh?",
+        "category": "Tài chính"
+      }
+    ]
+  },
+  {
+    "file_source": "56.txt",
+    "main_article": {
+      "title": "Cập nhật diễn biến nợ xấu ngành ngân hàng trong quí 3",
+      "slug": "cap-nhat-dien-bien-no-xau-nganh-ngan-hang-trong-qui-3",
+      "description": "Tỷ lệ nợ xấu ngân hàng trong quý 3/2025 có dấu hiệu cải thiện sau khi đạt đỉnh hồi đầu năm, với tốc độ tăng nợ xấu chậm lại.",
+      "author": "Lê Hoài Ân",
+      "publish_date": "2025-11-13T13:00:00",
+      "keywords": [
+        "nợ xấu",
+        "ngân hàng",
+        "VPB",
+        "chất lượng tài sản",
+        "quản trị rủi ro"
+      ],
+      "entities": {
+        "locations": [],
+        "people": ["Lê Hoài Ân"],
+        "organizations": ["VPB"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": ["Tỷ lệ nợ xấu VPB: 3,51% (thấp nhất từ 2023)"]
+    },
+    "related_articles": [
+      {
+        "title": "Lo ngại lạm dụng ‘nhà ở duy nhất’ để né thu giữ tài sản nợ xấu",
+        "category": "Tài chính"
+      },
+      {
+        "title": "Tỷ lệ bao phủ nợ xấu ngành ngân hàng đang đi xuống",
+        "category": "Tài chính"
+      }
+    ]
+  },
+  {
+    "file_source": "57.txt",
+    "main_article": {
+      "title": "Cơ hội và rủi ro với ‘sóng’ thoái vốn",
+      "slug": "co-hoi-va-rui-ro-voi-song-thoai-von",
+      "description": "Làn sóng thoái vốn nhà nước tạo điểm sáng thị trường nhưng tiềm ẩn rủi ro mua đuổi. Cổ phiếu PET tăng trần sau tin PVN đấu giá 24,9 triệu cổ phần.",
+      "author": "Triêu Dương",
+      "publish_date": "2025-11-13T07:00:00",
+      "keywords": ["thoái vốn", "cổ phiếu", "PET", "nhà nước", "Petrosetco"],
+      "entities": {
+        "locations": ["Đà Nẵng", "TPHCM"],
+        "people": [],
+        "organizations": ["Petrosetco (PET)", "PVN", "HOSE"]
+      },
+      "sentiment": "mixed"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "Số lượng đấu giá PET: 24,9 triệu cổ phiếu",
+        "Giá cổ phiếu PET: 32.200 đồng/cp"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "Vốn từ quỹ đầu tư mạo hiểm cho startup: lát cắt từ Đà Nẵng",
+        "category": "Kinh doanh"
+      },
+      {
+        "title": "Tham vọng công nghệ cao của TPHCM: cần ‘cú hích’ nào để vượt ngưỡng lắp ráp?",
+        "category": "Công nghệ"
+      }
+    ]
+  },
+  {
+    "file_source": "58.txt",
+    "main_article": {
+      "title": "Tăng hơn 38 điểm, VN-Index lấy lại mốc 1.630 điểm",
+      "slug": "tang-hon-38-diem-vn-index-lay-lai-moc-1-630-diem",
+      "description": "VN-Index tăng mạnh hơn 38 điểm lên mốc 1.631,86 điểm với thanh khoản đạt hơn 22.100 tỉ đồng, đánh dấu phiên hồi phục thứ hai liên tiếp.",
+      "author": "Trúc Đào",
+      "publish_date": "2025-11-12T16:52:00",
+      "keywords": [
+        "VN-Index",
+        "chứng khoán",
+        "HOSE",
+        "thanh khoản",
+        "tăng điểm"
+      ],
+      "entities": {
+        "locations": [],
+        "people": [],
+        "organizations": ["HOSE"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "VN-Index: 1.631,86 điểm (+38,25 điểm)",
+        "Giá trị giao dịch: > 22.100 tỉ đồng",
+        "Số mã tăng (HOSE): 268"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "Chứng khoán tăng trở lại, thanh khoản thấp",
+        "category": "Tài chính"
+      },
+      { "title": "VN-Index tiếp tục giảm gần 19 điểm", "category": "Tài chính" }
+    ]
+  },
+  {
+    "file_source": "59.txt",
+    "main_article": {
+      "title": "Cổ phiếu nhóm xuất khẩu dưới tác động từ thuế đối ứng",
+      "slug": "co-phieu-nhom-xuat-khau-duoi-tac-dong-tu-thue-doi-ung",
+      "description": "Nhóm cổ phiếu xuất khẩu phục hồi yếu hơn thị trường chung và ít được quan tâm dù ngành dệt may hưởng lợi từ sự dịch chuyển đơn hàng.",
+      "author": "Bình An",
+      "publish_date": "2025-11-12T16:00:00",
+      "keywords": [
+        "cổ phiếu xuất khẩu",
+        "thuế đối ứng",
+        "dệt may",
+        "VN-Index",
+        "đầu tư"
+      ],
+      "entities": {
+        "locations": ["Việt Nam", "Mỹ", "Trung Quốc"],
+        "people": ["Donald Trump"],
+        "organizations": []
+      },
+      "sentiment": "mixed"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": [
+      {
+        "title": "Việt Nam – Mỹ: thỏa thuận thuế đối ứng mới ‘mở lối’ cho các ngành xuất khẩu chủ lực",
+        "category": "Kinh doanh"
+      },
+      {
+        "title": "Ông Trump ký lệnh miễn thuế đối ứng cho hàng loạt sản phẩm",
+        "category": "Thế giới"
+      }
+    ]
+  },
+  {
+    "file_source": "60.txt",
+    "main_article": {
+      "title": "Chứng khoán tăng trở lại, thanh khoản thấp",
+      "slug": "chung-khoan-tang-tro-lai-thanh-khoan-thap",
+      "description": "Sau chuỗi giảm mạnh, VN-Index phục hồi hơn 13 điểm lên 1.593,61 điểm nhưng thanh khoản trên sàn HOSE sụt giảm, chỉ đạt hơn 19.700 tỉ đồng.",
+      "author": "Thùy Linh",
+      "publish_date": "2025-11-11T16:11:00",
+      "keywords": [
+        "chứng khoán",
+        "VN-Index",
+        "thanh khoản",
+        "phục hồi",
+        "HOSE"
+      ],
+      "entities": {
+        "locations": [],
+        "people": ["Thùy Linh"],
+        "organizations": ["HOSE"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "VN-Index tăng: 13,07 điểm (lên 1.593,61 điểm)",
+        "Thanh khoản HOSE: > 19.700 tỉ đồng",
+        "Số mã tăng: 186",
+        "Số mã giảm: 114"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "VN-Index tiếp tục giảm gần 19 điểm",
+        "category": "Tài chính"
+      },
+      {
+        "title": "Doanh nghiệp chứng khoán tăng tốc gọi vốn giữa nhịp chững thị trường",
+        "category": "Tài chính"
+      }
+    ]
+  },
+  {
+    "file_source": "61.txt",
+    "main_article": {
+      "title": "Doanh nghiệp chứng khoán tăng tốc gọi vốn giữa nhịp chững thị trường",
+      "slug": "doanh-nghiep-chung-khoan-tang-toc-goi-von-giua-nhip-chung-thi-truong",
+      "description": "Các công ty chứng khoán như VietCap đẩy mạnh kế hoạch tăng vốn dịp cuối năm để chuẩn bị cho chu kỳ kinh doanh mới, bất chấp tâm lý e dè của nhà đầu tư.",
+      "author": "Dũng Nguyễn",
+      "publish_date": "2025-11-11T07:00:00",
+      "keywords": [
+        "chứng khoán",
+        "tăng vốn",
+        "VietCap",
+        "gọi vốn",
+        "thị trường"
+      ],
+      "entities": {
+        "locations": [],
+        "people": ["Dũng Nguyễn"],
+        "organizations": ["VietCap", "HOSE"]
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": "2300000000000 VND",
+      "key_figures": [
+        "VietCap chào bán: 127,5 triệu cổ phiếu",
+        "Vốn điều lệ dự kiến: 8.500 tỉ đồng"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "Chứng khoán tháng 11 vẫn trong pha điều chỉnh?",
+        "category": "Tài chính"
+      },
+      {
+        "title": "Thị trường chứng khoán cần nhiều ‘hàng mới, tiền mới’ hơn",
+        "category": "Tài chính"
+      }
+    ]
+  },
+  {
+    "file_source": "62.txt",
+    "main_article": {
+      "title": "VN-Index tiếp tục giảm gần 19 điểm",
+      "slug": "vn-index-tiep-tuc-giam-gan-19-diem",
+      "description": "Thị trường chứng khoán diễn biến tiêu cực phiên đầu tuần 10/11, VN-Index mất gần 19 điểm về mức 1.580,54 điểm với sắc đỏ bao trùm.",
+      "author": "Trúc Đào",
+      "publish_date": "2025-11-10T16:21:00",
+      "keywords": ["VN-Index", "giảm điểm", "chứng khoán", "tiêu cực", "HOSE"],
+      "entities": {
+        "locations": ["châu Á"],
+        "people": ["Trúc Đào"],
+        "organizations": ["HOSE"]
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "VN-Index giảm: 18,56 điểm (về 1.580,54 điểm)",
+        "Số mã giảm: 202",
+        "Số mã tăng: 101"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "Chứng khoán châu Á bứt phá nhờ AI, khơi dậy nỗi lo ‘bong bóng’ công nghệ",
+        "category": "Thế giới"
+      },
+      {
+        "title": "Giảm tiếp gần 44 điểm, VN-Index về dưới 1.600 điểm",
+        "category": "Tài chính"
+      }
+    ]
+  },
+  {
+    "file_source": "63.txt",
+    "main_article": {
+      "title": "Kỷ lục margin và đôi điều suy ngẫm",
+      "slug": "ky-luc-margin-va-doi-dieu-suy-ngam",
+      "description": "Dư nợ margin đạt kỷ lục 370.000 tỉ đồng trong bối cảnh VN-Index điều chỉnh giảm 4 tuần liên tiếp, đặt ra áp lực lớn và yêu cầu dòng tiền mới.",
+      "author": "Vân Phong",
+      "publish_date": "2025-11-09T07:00:00",
+      "keywords": ["margin", "dư nợ", "chứng khoán", "VN-Index", "dòng tiền"],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": ["Vân Phong"],
+        "organizations": ["Công ty chứng khoán Bảo Việt (BVSC)"]
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": [
+        "Dư nợ margin cuối quý 3/2025: 370.000 tỉ đồng",
+        "Tăng trưởng margin: 26% (so với quý 2), 56% (so với đầu năm)"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "Chứng khoán tháng 11 vẫn trong pha điều chỉnh?",
+        "category": "Tài chính"
+      },
+      {
+        "title": "Quí kinh doanh bùng nổ của các công ty chứng khoán",
+        "category": "Tài chính"
+      }
+    ]
+  },
+  {
+    "file_source": "64.txt",
+    "main_article": {
+      "title": "Giảm tiếp gần 44 điểm, VN-Index về dưới 1.600 điểm",
+      "slug": "giam-tiep-gan-44-diem-vn-index-ve-duoi-1600-diem",
+      "description": "VN-Index giảm sâu 43,54 điểm trong phiên 7/11, thủng mốc 1.600 điểm. Khối ngoại tiếp tục bán ròng mạnh hơn 1.300 tỉ đồng.",
+      "author": "Trúc Đào",
+      "publish_date": "2025-11-07T17:08:00",
+      "keywords": [
+        "VN-Index",
+        "giảm điểm",
+        "bán ròng",
+        "khối ngoại",
+        "thủng đáy"
+      ],
+      "entities": {
+        "locations": ["châu Á"],
+        "people": ["Trúc Đào"],
+        "organizations": ["HOSE"]
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "VN-Index giảm: 43,54 điểm (về 1.599,1 điểm)",
+        "Khối ngoại bán ròng: > 1.300 tỉ đồng",
+        "Số mã giảm: 270"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "VN-Index lại lùi về sát 1.640 điểm",
+        "category": "Tài chính"
+      },
+      {
+        "title": "Chứng khoán châu Á bứt phá nhờ AI, khơi dậy nỗi lo ‘bong bóng’ công nghệ",
+        "category": "Thế giới"
+      }
+    ]
+  },
+  {
+    "file_source": "65.txt",
+    "main_article": {
+      "title": "VN-Index lại lùi về sát 1.640 điểm",
+      "slug": "vn-index-lai-lui-ve-sat-1640-diem",
+      "description": "Sau nhịp hồi phục ngắn, VN-Index quay đầu giảm hơn 12 điểm về 1.642,64 điểm trong phiên 6/11 với thanh khoản đạt hơn 17.800 tỉ đồng.",
+      "author": "Thùy Linh",
+      "publish_date": "2025-11-06T16:50:00",
+      "keywords": [
+        "VN-Index",
+        "giảm điểm",
+        "chứng khoán",
+        "thanh khoản",
+        "HOSE"
+      ],
+      "entities": {
+        "locations": [],
+        "people": ["Thùy Linh"],
+        "organizations": ["HOSE"]
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "VN-Index giảm: > 12 điểm (về 1.642,64 điểm)",
+        "Thanh khoản HOSE: > 17.800 tỉ đồng"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "VN-Index quay đầu tăng gần 35 điểm, hàng chục cổ phiếu tím sàn",
+        "category": "Tài chính"
+      },
+      { "title": "VN-Index tiếp tục giảm gần 23 điểm", "category": "Tài chính" }
+    ]
+  },
+  {
+    "file_source": "66.txt",
+    "main_article": {
+      "title": "Chứng khoán tháng 11 vẫn trong pha điều chỉnh?",
+      "slug": "chung-khoan-thang-11-van-trong-pha-dieu-chinh",
+      "description": "Thị trường chứng khoán tháng 11 được dự báo vẫn đối mặt áp lực điều chỉnh sau khi VN-Index mất hơn 8% từ đỉnh tháng 10 và thanh khoản sụt giảm.",
+      "author": "Triêu Dương",
+      "publish_date": "2025-11-06T10:00:00",
+      "keywords": [
+        "chứng khoán",
+        "tháng 11",
+        "điều chỉnh",
+        "VN-Index",
+        "thanh khoản"
+      ],
+      "entities": {
+        "locations": [],
+        "people": ["Triêu Dương"],
+        "organizations": []
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "Mức giảm từ đỉnh 14/10: 155 điểm (-8,6%)",
+        "VN-Index (31/10): 1.640 điểm"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "‘Khoảng trống’ truyền thông trên thị trường chứng khoán",
+        "category": "Tài chính"
+      },
+      {
+        "title": "Chứng khoán giảm gần 30 điểm phiên cuối tháng 10",
+        "category": "Tài chính"
+      }
+    ]
+  },
+  {
+    "file_source": "67.txt",
+    "main_article": {
+      "title": "Gỡ rào cản vốn ngoại (kỳ 2): tỷ giá và định giá",
+      "slug": "go-rao-can-von-ngoai-ky-2-ty-gia-va-dinh-gia",
+      "description": "Dù kinh tế vĩ mô tích cực, khối ngoại vẫn bán ròng do áp lực tỷ giá, giá vàng và xu hướng cơ cấu danh mục đầu tư toàn cầu.",
+      "author": "Dũng Nguyễn",
+      "publish_date": "2025-11-06T07:00:00",
+      "keywords": [
+        "vốn ngoại",
+        "tỷ giá",
+        "bán ròng",
+        "định giá",
+        "chứng khoán"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": ["Dũng Nguyễn"],
+        "organizations": []
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": [
+      {
+        "title": "Gỡ rào cản vốn ngoại (kỳ 1): đòn bẩy kép để ‘hút’ vốn ngoại",
+        "category": "Tài chính"
+      },
+      {
+        "title": "Dòng vốn ngoại 2025: chờ những cơ hội mới",
+        "category": "Tài chính"
+      }
+    ]
+  },
+  {
+    "file_source": "68.txt",
+    "main_article": {
+      "title": "Gỡ rào cản vốn ngoại (kỳ 1): đòn bẩy kép để ‘hút’ vốn ngoại",
+      "slug": "go-rao-can-von-ngoai-ky-1-don-bay-kep-de-hut-von-ngoai",
+      "description": "Việt Nam đang tận dụng cơ hội thu hút vốn ngoại thông qua việc xây dựng Trung tâm Tài chính Quốc tế (IFC) và nỗ lực nâng hạng thị trường chứng khoán.",
+      "author": "Dũng Nguyễn",
+      "publish_date": "2025-11-05T07:00:00",
+      "keywords": [
+        "vốn ngoại",
+        "Trung tâm Tài chính Quốc tế",
+        "IFC",
+        "nâng hạng thị trường",
+        "đầu tư"
+      ],
+      "entities": {
+        "locations": ["Việt Nam", "TPHCM", "Đà Nẵng"],
+        "people": ["Dũng Nguyễn"],
+        "organizations": ["Chính phủ"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": []
+  },
+  {
+    "file_source": "69.txt",
+    "main_article": {
+      "title": "VN-Index quay đầu tăng gần 35 điểm, hàng chục cổ phiếu tím sàn",
+      "slug": "vn-index-quay-dau-tang-gan-35-diem-hang-chuc-co-phieu-tim-san",
+      "description": "Thị trường chứng khoán phục hồi mạnh mẽ phiên 4/11, VN-Index tăng gần 35 điểm lên 1.651,98 điểm với thanh khoản cải thiện đạt hơn 34.200 tỉ đồng.",
+      "author": "Trúc Đào",
+      "publish_date": "2025-11-04T16:29:00",
+      "keywords": [
+        "VN-Index",
+        "tăng điểm",
+        "chứng khoán",
+        "tím sàn",
+        "phục hồi"
+      ],
+      "entities": {
+        "locations": [],
+        "people": ["Trúc Đào"],
+        "organizations": ["HOSE"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "VN-Index tăng: ~35 điểm (lên 1.651,98 điểm)",
+        "Thanh khoản HOSE: > 34.200 tỉ đồng",
+        "Thanh khoản VN30: 17.700 tỉ đồng"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "VN-Index tiếp tục giảm gần 23 điểm",
+        "category": "Tài chính"
+      },
+      {
+        "title": "Giảm hơn 16 điểm, VN-Index lùi về dưới 1.670 điểm",
+        "category": "Tài chính"
+      }
+    ]
+  },
+  {
+    "file_source": "70.txt",
+    "main_article": {
+      "title": "VN-Index tiếp tục giảm gần 23 điểm",
+      "slug": "vn-index-tiep-tuc-giam-gan-23-diem",
+      "description": "VN-Index giảm gần 23 điểm trong phiên đầu tuần 3/11, nối dài chuỗi lao dốc 3 phiên liên tiếp, với áp lực bán mạnh trên diện rộng.",
+      "author": "Thùy Linh",
+      "publish_date": "2025-11-03T17:12:00",
+      "keywords": ["VN-Index", "giảm điểm", "chứng khoán", "lao dốc", "HOSE"],
+      "entities": {
+        "locations": [],
+        "people": ["Thùy Linh"],
+        "organizations": ["HOSE"]
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "VN-Index giảm: 22,65 điểm (về 1.617 điểm)",
+        "VN30 giảm: 27,72 điểm",
+        "Số mã giảm (HOSE): 240"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "Giảm hơn 16 điểm, VN-Index lùi về dưới 1.670 điểm",
+        "category": "Tài chính"
+      },
+      {
+        "title": "Chứng khoán giảm gần 30 điểm phiên cuối tháng 10",
+        "category": "Tài chính"
+      }
+    ]
+  },
+  {
+    "file_source": "71.txt",
+    "main_article": {
+      "title": "Chứng khoán giảm gần 30 điểm phiên cuối tháng 10",
+      "slug": "chung-khoan-giam-gan-30-diem-phien-cuoi-thang-10",
+      "description": "Kết thúc tháng 10, VN-Index giảm gần 30 điểm với sắc đỏ bao trùm sàn HOSE, thanh khoản tăng nhưng thị trường chịu áp lực bán lớn.",
+      "author": "Trúc Đào",
+      "publish_date": "2025-10-31T16:46:00",
+      "keywords": [
+        "VN-Index",
+        "giảm điểm",
+        "cuối tháng 10",
+        "chứng khoán",
+        "thanh khoản"
+      ],
+      "entities": {
+        "locations": [],
+        "people": ["Trúc Đào"],
+        "organizations": ["HOSE"]
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "VN-Index giảm: 29,92 điểm (còn 1.639,65 điểm)",
+        "Số mã giảm (HOSE): 190"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "Giảm hơn 16 điểm, VN-Index lùi về dưới 1.670 điểm",
+        "category": "Tài chính"
+      },
+      { "title": "VN-Index vượt 1.685 điểm", "category": "Tài chính" }
+    ]
+  },
+  {
+    "file_source": "72.txt",
+    "main_article": {
+      "title": "Lợi nhuận quí 3 tăng tốc: các chuỗi bán lẻ ‘hái quả’ từ tái cơ cấu",
+      "slug": "loi-nhuan-qui-3-tang-toc-cac-chuoi-ban-le-hai-qua-tu-tai-co-cau",
+      "description": "Nhiều doanh nghiệp bán lẻ công bố kết quả kinh doanh quý 3/2025 khả quan nhờ chiến lược tái cơ cấu và tối ưu hóa chi phí vận hành.",
+      "author": "Dũng Nguyễn",
+      "publish_date": "2025-10-30T19:00:00",
+      "keywords": ["bán lẻ", "lợi nhuận", "quý 3", "tái cơ cấu", "WinCommerce"],
+      "entities": {
+        "locations": [],
+        "people": ["Dũng Nguyễn"],
+        "organizations": ["WinCommerce", "Masan"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": ["Doanh thu WinCommerce: 10.544 tỉ đồng (tăng 22,6%)"]
+    },
+    "related_articles": [
+      {
+        "title": "Bán lẻ hàng hóa đặt mục tiêu tăng ít nhất 11% hàng năm",
+        "category": "Kinh doanh"
+      },
+      {
+        "title": "Nhà bán lẻ vẫn ‘nới’ quy mô trong biến động thương mại",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "73.txt",
+    "main_article": {
+      "title": "Giảm hơn 16 điểm, VN-Index lùi về dưới 1.670 điểm",
+      "slug": "giam-hon-16-diem-vn-index-lui-ve-duoi-1670-diem",
+      "description": "VN-Index giảm hơn 16 điểm trong phiên 30/10 với thanh khoản đạt trên 23.800 tỉ đồng, khối ngoại tiếp tục bán ròng mạnh trên sàn HOSE.",
+      "author": "Thùy Linh",
+      "publish_date": "2025-10-30T16:49:00",
+      "keywords": [
+        "VN-Index",
+        "giảm điểm",
+        "khối ngoại",
+        "bán ròng",
+        "thanh khoản"
+      ],
+      "entities": {
+        "locations": [],
+        "people": ["Thùy Linh"],
+        "organizations": ["HOSE"]
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "VN-Index giảm: 16,26 điểm (về 1.669,57 điểm)",
+        "Thanh khoản HOSE: > 23.800 tỉ đồng"
+      ]
+    },
+    "related_articles": [
+      { "title": "VN-Index vượt 1.685 điểm", "category": "Tài chính" },
+      {
+        "title": "Khối ngoại trở lại mua ròng, VN-Index tăng gần 28 điểm",
+        "category": "Tài chính"
+      }
+    ]
+  },
+  {
+    "file_source": "74.txt",
+    "main_article": {
+      "title": "Thiếu không gian xanh, nông nghiệp đô thị mở hướng đầu tư mới",
+      "slug": "thieu-khong-gian-xanh-nong-nghiep-do-thi-mo-huong-dau-tu-moi",
+      "description": "Trong bối cảnh thiếu hụt không gian xanh, nông nghiệp đô thị đang nổi lên như một hướng đầu tư mới giúp cung cấp thực phẩm sạch và tăng mảng xanh.",
+      "author": "Minh Thảo",
+      "publish_date": "2025-11-18T16:35:00",
+      "keywords": [
+        "nông nghiệp đô thị",
+        "không gian xanh",
+        "đầu tư",
+        "TPHCM",
+        "thực phẩm sạch"
+      ],
+      "entities": {
+        "locations": ["TPHCM", "Bình Định", "Phú Quốc"],
+        "people": ["Trần Đình Lý"],
+        "organizations": ["Trường Đại học Nông Lâm TPHCM"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": [
+      {
+        "title": "TPHCM cho phép 54 công ty thí điểm làm nhà ở thương mại trên đất nông nghiệp",
+        "category": "Quy hoạch"
+      },
+      {
+        "title": "Khởi nghiệp Xanh 2025: từ xơ dừa Bình Định đến socola Phú Quốc, nông nghiệp tuần hoàn lên ngôi",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "75.txt",
+    "main_article": {
+      "title": "Giá robusta bật tăng do nguồn cung thắt chặt",
+      "slug": "gia-robusta-bat-tang-do-nguon-cung-that-chat",
+      "description": "Giá cà phê robusta tăng hơn 6% lên mức 4.483 USD/tấn do lo ngại nguồn cung thắt chặt vì thời tiết xấu và tồn kho giảm.",
+      "author": "Bình Dương",
+      "publish_date": "2025-11-18T11:33:00",
+      "keywords": ["cà phê", "robusta", "giá cả", "nguồn cung", "xuất khẩu"],
+      "entities": {
+        "locations": [],
+        "people": [],
+        "organizations": ["Sở Giao dịch Hàng hóa Việt Nam (MXV)"]
+      },
+      "sentiment": "mixed"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": ["Giá robusta: 4.483 USD/tấn (tăng > 6%)"]
+    },
+    "related_articles": [
+      {
+        "title": "Thuế cà phê Mỹ về 0%: Cơ hội bứt phá cho xuất khẩu Việt?",
+        "category": "Kinh doanh"
+      },
+      {
+        "title": "Giá cà phê arabica tiến sát mốc 9.000 đô la/tấn",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "76.txt",
+    "main_article": {
+      "title": "Gia Lai chấp thuận dự án điện gió hơn 48.300 tỉ đồng",
+      "slug": "gia-lai-chap-thuan-du-an-dien-gio-hon-48-300-ti-dong",
+      "description": "UBND tỉnh Gia Lai đã chấp thuận chủ trương đầu tư dự án Nhà máy điện gió Hòn Trâu - Giai đoạn 1 với tổng vốn hơn 48.300 tỉ đồng.",
+      "author": "Kỳ Anh",
+      "publish_date": "2025-11-17T14:36:00",
+      "keywords": [
+        "điện gió",
+        "Gia Lai",
+        "Hòn Trâu",
+        "đầu tư",
+        "năng lượng tái tạo"
+      ],
+      "entities": {
+        "locations": ["Gia Lai", "Quảng Trị", "Cà Mau", "Bạc Liêu"],
+        "people": ["Kỳ Anh"],
+        "organizations": ["UBND tỉnh Gia Lai", "Sở Tài chính"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": "48372000000000 VND",
+      "key_figures": ["Công suất: 750MW"]
+    },
+    "related_articles": [
+      {
+        "title": "Quảng Trị chấp thuận hai dự án điện gió trị giá hơn 3.498 tỉ đồng",
+        "category": "Kinh doanh"
+      },
+      {
+        "title": "Cà Mau sẽ có thêm 61,5 triệu kWh điện gió vào cuối năm 2026",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "77.txt",
+    "main_article": {
+      "title": "Hơn 70.000 tấn ‘Gạo Việt xanh, phát thải thấp’ được cấp nhãn hiệu",
+      "slug": "hon-70-000-tan-gao-viet-xanh-phat-thai-thap-duoc-cap-nhan-hieu",
+      "description": "Hơn 70.000 tấn gạo đã được VIETRISA cấp chứng nhận nhãn hiệu 'Gạo Việt xanh, phát thải thấp', khẳng định cam kết giảm phát thải trong nông nghiệp.",
+      "author": "Kỳ Anh",
+      "publish_date": "2025-11-16T20:51:00",
+      "keywords": [
+        "gạo Việt xanh",
+        "phát thải thấp",
+        "VIETRISA",
+        "lúa gạo",
+        "nông nghiệp"
+      ],
+      "entities": {
+        "locations": ["Việt Nam", "miền Tây"],
+        "people": ["Bùi Bá Bổng"],
+        "organizations": ["VIETRISA"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "Sản lượng cấp nhãn hiệu: > 70.000 tấn",
+        "Cấp mới (T10-11/2025): > 52.000 tấn"
+      ]
+    },
+    "related_articles": [
+      { "title": "Lúa gạo đồng loạt tăng giá", "category": "Kinh doanh" },
+      {
+        "title": "Lúa gạo miền Tây: nông dân gồng lỗ, thương lái buông tay",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "78.txt",
+    "main_article": {
+      "title": "Dành 95.000 tỉ đồng phát triển khoa học công nghệ năm tới",
+      "slug": "danh-95-000-ti-dong-phat-trien-khoa-hoc-cong-nghe-nam-toi",
+      "description": "Chính phủ dự kiến dành khoảng 95.000 tỉ đồng ngân sách năm tới cho phát triển khoa học công nghệ và đổi mới sáng tạo.",
+      "author": "Hoài Hương",
+      "publish_date": "2025-11-15T19:05:00",
+      "keywords": [
+        "khoa học công nghệ",
+        "ngân sách",
+        "đổi mới sáng tạo",
+        "chuyển đổi số",
+        "Chính phủ"
+      ],
+      "entities": {
+        "locations": ["Việt Nam", "Hải Phòng", "Đông Nam Á"],
+        "people": ["Phạm Minh Chính"],
+        "organizations": ["Chính phủ", "Ban chỉ đạo quốc gia"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2026",
+      "investment_capital": "95000000000000 VND",
+      "key_figures": []
+    },
+    "related_articles": [
+      {
+        "title": "Hải Phòng lọt tốp 3 toàn quốc về Chỉ số Chuyển đổi số",
+        "category": "Công nghệ"
+      },
+      {
+        "title": "85% doanh nghiệp Đông Nam Á mới ở giai đoạn đầu của chuyển đổi số",
+        "category": "Công nghệ"
+      }
+    ]
+  },
+  {
+    "file_source": "79.txt",
+    "main_article": {
+      "title": "Tổ máy số 2 Thủy điện Hòa Bình mở rộng hòa lưới điện quốc gia",
+      "slug": "to-may-so-2-thuy-dien-hoa-binh-mo-rong-hoa-luoi-dien-quoc-gia",
+      "description": "Tổ máy số 2 của nhà máy Thủy điện Hòa Bình mở rộng đã chính thức hòa lưới điện quốc gia, góp phần tăng cường an ninh năng lượng.",
+      "author": "Thùy Linh",
+      "publish_date": "2025-11-15T11:05:00",
+      "keywords": [
+        "thủy điện Hòa Bình",
+        "hòa lưới điện",
+        "năng lượng",
+        "EVN",
+        "mở rộng"
+      ],
+      "entities": {
+        "locations": ["Việt Nam", "Hòa Bình", "EU"],
+        "people": ["Thùy Linh"],
+        "organizations": ["EVN"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": ["Tổng công suất mở rộng: 480MW"]
+    },
+    "related_articles": [
+      {
+        "title": "Thủy điện tích năng: phép thử tầm nhìn về an ninh năng lượng",
+        "category": "Năng lượng"
+      },
+      {
+        "title": "EU hỗ trợ 430 triệu euro cho thủy điện tích năng đầu tiên của Việt Nam",
+        "category": "Năng lượng"
+      }
+    ]
+  },
+  {
+    "file_source": "80.txt",
+    "main_article": {
+      "title": "Đồng Nai chuẩn bị khởi công ba khu công nghiệp quy mô lớn vào ngày 19-12",
+      "slug": "dong-nai-chuan-bi-khoi-cong-ba-khu-cong-nghiep-quy-mo-lon-vao-ngay-19-12",
+      "description": "Đồng Nai dự kiến khởi công 3 khu công nghiệp lớn gồm Long Đức 3, Bàu Cạn - Tân Hiệp và Xuân Quế - Sông Nhạn, đánh dấu bước phát triển hạ tầng công nghiệp quan trọng.",
+      "author": "Bình Dương",
+      "publish_date": "2025-11-15T06:53:00",
+      "keywords": [
+        "khu công nghiệp",
+        "Đồng Nai",
+        "khởi công",
+        "đầu tư",
+        "hạ tầng"
+      ],
+      "entities": {
+        "locations": [
+          "Đồng Nai",
+          "Long Đức",
+          "Bàu Cạn",
+          "Tân Hiệp",
+          "Xuân Quế",
+          "Sông Nhạn"
+        ],
+        "people": ["Bình Dương"],
+        "organizations": ["UBND tỉnh Đồng Nai"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": [
+      {
+        "title": "Sẽ có quy định mới về đầu tư khu công nghiệp trên đất lúa hai vụ",
+        "category": "Kinh doanh"
+      },
+      {
+        "title": "Ưu tiên đầu tư bãi đỗ xe tại khu dân cư đông, khu công nghiệp và đô thị lớn",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "81.txt",
+    "main_article": {
+      "title": "Giá ca cao giảm phiên thứ 3 liên tiếp",
+      "slug": "gia-ca-cao-giam-phien-thu-3-lien-tiep",
+      "description": "Giá ca cao thế giới giảm 2,4% xuống mức 5.480 USD/tấn do nguồn cung từ Bờ Biển Ngà cải thiện và điều kiện thời tiết thuận lợi tại Tây Phi.",
+      "author": "Trúc Đào",
+      "publish_date": "2025-11-14T12:44:00",
+      "keywords": ["ca cao", "giá cả", "nguồn cung", "Bờ Biển Ngà", "hàng hóa"],
+      "entities": {
+        "locations": ["Tây Phi", "Bờ Biển Ngà"],
+        "people": ["Trúc Đào"],
+        "organizations": ["Sở Giao dịch Hàng hóa Việt Nam (MXV)"]
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": ["Giá ca cao: 5.480 USD/tấn (giảm 2,4%)"]
+    },
+    "related_articles": [
+      {
+        "title": "Giá ca cao tiếp tục lao dốc, xuống 6.185 đô la/tấn",
+        "category": "Kinh doanh"
+      },
+      {
+        "title": "Giá ca cao giảm về mức thấp nhất trong 11 tháng",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "82.txt",
+    "main_article": {
+      "title": "Cần Thơ sẽ có nhà máy điện mặt trời công suất 50MW",
+      "slug": "can-tho-se-co-nha-may-dien-mat-troi-cong-suat-50mw",
+      "description": "Tập đoàn Sao Mai đầu tư 1.000 tỷ đồng xây dựng nhà máy điện mặt trời công suất 50MW tại Cần Thơ, góp phần cung cấp năng lượng sạch cho ĐBSCL.",
+      "author": "Lạc Long",
+      "publish_date": "2025-11-14T11:20:00",
+      "keywords": [
+        "điện mặt trời",
+        "Cần Thơ",
+        "năng lượng sạch",
+        "Sao Mai",
+        "ĐBSCL"
+      ],
+      "entities": {
+        "locations": ["Cần Thơ", "xã Xà Phiên", "ĐBSCL"],
+        "people": ["Lạc Long"],
+        "organizations": ["Tập đoàn Sao Mai"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2030",
+      "investment_capital": "1000000000000 VND",
+      "key_figures": [
+        "Công suất: 50MW",
+        "Diện tích: 53 ha",
+        "Giai đoạn: 2025 - 2030"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "Quảng Trị chấp thuận hai dự án điện gió trị giá hơn 3.498 tỉ đồng",
+        "category": "Kinh doanh"
+      },
+      {
+        "title": "Điện lực miền Trung đã khôi phục cho hơn 99% khách hàng sau bão",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "83.txt",
+    "main_article": {
+      "title": "Khuyến cáo doanh nghiệp cập nhật quy định mới của Trung Quốc về xuất khẩu nông sản",
+      "slug": "khuyen-cao-doanh-nghiep-cap-nhat-quy-dinh-moi-cua-trung-quoc-ve-xuat-khau-nong-san",
+      "description": "Bộ Công Thương khuyến cáo doanh nghiệp lưu ý Nghị định 280 mới của Trung Quốc về đăng ký cơ sở sản xuất thực phẩm nhập khẩu, có hiệu lực từ 1/6/2026.",
+      "author": "Bình Dương",
+      "publish_date": "2025-11-14T07:24:00",
+      "keywords": [
+        "xuất khẩu",
+        "nông sản",
+        "Trung Quốc",
+        "quy định mới",
+        "an toàn thực phẩm"
+      ],
+      "entities": {
+        "locations": ["Trung Quốc", "Việt Nam"],
+        "people": ["Bình Dương"],
+        "organizations": ["Bộ Công Thương", "Tổng cục Hải quan Trung Quốc"]
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": "2026",
+      "investment_capital": null,
+      "key_figures": ["Hiệu lực từ: 01/06/2026"]
+    },
+    "related_articles": [
+      {
+        "title": "Cổ phiếu nhóm xuất khẩu dưới tác động từ thuế đối ứng",
+        "category": "Kinh doanh"
+      },
+      {
+        "title": "Xuất khẩu của Trung Quốc lần đầu suy giảm sau gần 2 năm",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "84.txt",
+    "main_article": {
+      "title": "Trong tháng 11, trình Chính phủ Nghị định hỗ trợ lãi suất 2% cho dự án xanh",
+      "slug": "trong-thang-11-trinh-chinh-phu-nghi-dinh-ho-tro-lai-suat-2-cho-du-an-xanh",
+      "description": "Thủ tướng yêu cầu Ngân hàng Nhà nước trình Nghị định hỗ trợ lãi suất 2% cho các dự án xanh và ESG trong tháng 11/2025 để thúc đẩy kinh tế tư nhân.",
+      "author": "Gia Nghi",
+      "publish_date": "2025-11-13T06:34:00",
+      "keywords": [
+        "hỗ trợ lãi suất",
+        "dự án xanh",
+        "ESG",
+        "tín dụng xanh",
+        "doanh nghiệp"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": ["Phạm Minh Chính", "Gia Nghi"],
+        "organizations": ["Chính phủ", "Ngân hàng Nhà nước", "Bộ Tài chính"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": ["Hỗ trợ lãi suất: 2%/năm"]
+    },
+    "related_articles": [
+      {
+        "title": "Sẽ hỗ trợ lãi suất 2%/năm cho dự án xanh",
+        "category": "Tài chính"
+      },
+      {
+        "title": "Chiến lược ESG của doanh nghiệp mở đường cho tương lai năng lượng xanh",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "85.txt",
+    "main_article": {
+      "title": "Việt Nam là đối tác thương mại lớn nhất ASEAN và thứ 4 thế giới của Trung Quốc",
+      "slug": "viet-nam-la-doi-tac-thuong-mai-lon-nhat-asean-va-thu-4-the-gioi-cua-trung-quoc",
+      "description": "Việt Nam tiếp tục là đối tác thương mại lớn nhất của Trung Quốc trong ASEAN với kim ngạch đạt 208 tỷ USD trong 10 tháng đầu năm 2025.",
+      "author": "Kỳ Anh",
+      "publish_date": "2025-11-12T18:55:00",
+      "keywords": [
+        "thương mại",
+        "Việt Nam - Trung Quốc",
+        "xuất nhập khẩu",
+        "ASEAN",
+        "nông sản"
+      ],
+      "entities": {
+        "locations": ["Việt Nam", "Trung Quốc", "Đông Nam Á"],
+        "people": ["Kỳ Anh"],
+        "organizations": ["Bộ Nông nghiệp và Môi trường"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": [
+        "Kim ngạch 2024: 205,2 tỷ USD",
+        "Kim ngạch 10 tháng 2025: 208 tỷ USD"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "Những điểm cần chú ý về quyền sở hữu trí tuệ khi vào thị trường Trung Quốc",
+        "category": "Kinh doanh"
+      },
+      {
+        "title": "Xuất khẩu của Trung Quốc lần đầu suy giảm sau gần 2 năm",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "86.txt",
+    "main_article": {
+      "title": "Đầu tư hơn 200 tỉ đồng phát triển thiết kế chip vi mạch bán dẫn và AI tại Đà Nẵng",
+      "slug": "dau-tu-hon-200-ti-dong-phat-trien-thiet-ke-chip-vi-mach-ban-dan-va-ai-tai-da-nang",
+      "description": "Đà Nẵng phê duyệt dự án đầu tư hạ tầng hơn 200 tỷ đồng để phát triển nghiên cứu thiết kế chip bán dẫn và trí tuệ nhân tạo (AI) tại Công viên phần mềm số 2.",
+      "author": "Kỳ Anh",
+      "publish_date": "2025-11-12T10:55:00",
+      "keywords": ["Đà Nẵng", "bán dẫn", "AI", "đầu tư công", "công nghệ cao"],
+      "entities": {
+        "locations": ["Đà Nẵng", "Hải Châu"],
+        "people": ["Kỳ Anh"],
+        "organizations": ["Công viên phần mềm số 2"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2028",
+      "investment_capital": "200000000000 VND",
+      "key_figures": ["Thời gian thực hiện: 2025 - 2028"]
+    },
+    "related_articles": [
+      {
+        "title": "Đà Nẵng đẩy mạnh xử lý hồ sơ điện tử",
+        "category": "Công nghệ"
+      },
+      {
+        "title": "Mã hóa tài sản thực tế: Gợi ý để Đà Nẵng thu hút vốn vào IFC",
+        "category": "Tài chính"
+      }
+    ]
+  },
+  {
+    "file_source": "87.txt",
+    "main_article": {
+      "title": "Trái dừa và bài toán kép: giữ giá trị hay giữ thị trường?",
+      "slug": "trai-dua-va-bai-toan-kep-giu-gia-tri-hay-giu-thi-truong",
+      "description": "Bài viết bàn về đề xuất cấm xuất khẩu dừa khô nguyên liệu để phục vụ chế biến sâu, cân nhắc giữa lợi ích gia tăng giá trị và duy trì thị phần xuất khẩu.",
+      "author": "Trung Chánh",
+      "publish_date": "2025-11-11T19:00:00",
+      "keywords": [
+        "dừa",
+        "xuất khẩu",
+        "chế biến sâu",
+        "nông sản",
+        "giá trị gia tăng"
+      ],
+      "entities": {
+        "locations": ["Việt Nam", "Vĩnh Long", "Trung Quốc"],
+        "people": ["Trung Chánh"],
+        "organizations": []
+      },
+      "sentiment": "mixed"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "Kim ngạch xuất khẩu 2024: 1,048 tỷ USD",
+        "Kim ngạch 6 tháng đầu năm: 490 triệu USD"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "Xuất khẩu tăng mạnh, ngành chế biến thiếu nguồn dừa khô nguyên liệu",
+        "category": "Kinh doanh"
+      },
+      {
+        "title": "Chín vùng trồng dừa đủ điều kiện xuất khẩu sang thị trường Trung Quốc",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "88.txt",
+    "main_article": {
+      "title": "Cần Thơ hoàn tất lắp thiết bị giám sát hành trình cho 347 tàu cá",
+      "slug": "can-tho-hoan-tat-lap-thiet-bi-giam-sat-hanh-trinh-cho-347-tau-ca",
+      "description": "Cần Thơ đã hoàn thành việc lắp đặt thiết bị giám sát hành trình (VMS) cho 100% tàu cá đánh bắt xa bờ, nỗ lực gỡ thẻ vàng IUU của EC.",
+      "author": "Lạc Long",
+      "publish_date": "2025-11-11T16:13:00",
+      "keywords": ["IUU", "tàu cá", "giám sát hành trình", "VMS", "thẻ vàng"],
+      "entities": {
+        "locations": ["Cần Thơ", "Việt Nam", "Mỹ", "châu Âu"],
+        "people": ["Lạc Long"],
+        "organizations": ["Ủy ban châu Âu (EC)"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": ["Số tàu cá lắp VMS: 347 tàu"]
+    },
+    "related_articles": [
+      {
+        "title": "Thanh Hóa đưa 55 tàu cá ra khỏi danh sách nguy cơ vi phạm khai thác IUU",
+        "category": "Kinh doanh"
+      },
+      {
+        "title": "Mỹ viện trợ 12,5 triệu đô la giúp Việt Nam phòng chống khai thác IUU",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "89.txt",
+    "main_article": {
+      "title": "Sáp nhập 2 công ty con vào Tập đoàn Than – Khoáng sản Việt Nam",
+      "slug": "sap-nhap-2-cong-ty-con-vao-tap-doan-than-khoang-san-viet-nam",
+      "description": "Chính phủ ban hành Nghị quyết sáp nhập Công ty Nhôm Lâm Đồng và Công ty Môi trường vào công ty mẹ Tập đoàn Công nghiệp Than - Khoáng sản Việt Nam (TKV).",
+      "author": "Kỳ Anh",
+      "publish_date": "2025-11-11T16:09:00",
+      "keywords": [
+        "sáp nhập",
+        "TKV",
+        "Nhôm Lâm Đồng",
+        "doanh nghiệp nhà nước",
+        "tái cơ cấu"
+      ],
+      "entities": {
+        "locations": ["Lâm Đồng", "Đà Nẵng"],
+        "people": ["Kỳ Anh"],
+        "organizations": [
+          "TKV",
+          "Công ty TNHH MTV Nhôm Lâm Đồng",
+          "Công ty TNHH MTV Môi trường",
+          "Chính phủ"
+        ]
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": [
+      {
+        "title": "TKV nộp ngân sách 16.600 tỉ đồng trong 7 tháng",
+        "category": "Doanh nghiệp"
+      },
+      {
+        "title": "Đà Nẵng đấu giá 14 mỏ khoáng sản làm vật liệu xây dựng",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "90.txt",
+    "main_article": {
+      "title": "Sẽ có 25 giấy phép hoặc chứng chỉ hành nghề bị bãi bỏ",
+      "slug": "se-co-25-giay-phep-hoac-chung-chi-hanh-nghe-bi-bai-bo",
+      "description": "Bộ Tài chính đề xuất cắt giảm 25 ngành nghề kinh doanh có điều kiện để chuyển sang hậu kiểm, bao gồm dịch vụ kế toán, xuất khẩu gạo và thủ tục thuế.",
+      "author": "Thùy Linh",
+      "publish_date": "2025-11-11T15:26:00",
+      "keywords": [
+        "giấy phép",
+        "chứng chỉ hành nghề",
+        "cắt giảm",
+        "kinh doanh có điều kiện",
+        "Bộ Tài chính"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": ["Nguyễn Văn Thắng"],
+        "organizations": ["Bộ Tài chính", "Chính phủ", "Quốc hội"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": ["Số ngành nghề cắt giảm: 25 ngành"]
+    },
+    "related_articles": [
+      {
+        "title": "Bộ Tư pháp rà soát, cắt giảm thủ tục hành chính, thay hồ sơ giấy bằng dữ liệu",
+        "category": "Chính sách"
+      },
+      {
+        "title": "Các nhà quản lý tài sản trên toàn cầu cắt giảm đầu tư bất động sản",
+        "category": "Tài chính"
+      }
+    ]
+  },
+  {
+    "file_source": "91.txt",
+    "main_article": {
+      "title": "Luật hóa chất 2025 tác động đến hoạt động của doanh nghiệp như thế nào?",
+      "slug": "luat-hoa-chat-2025-tac-dong-den-hoat-dong-cua-doanh-nghiep-nhu-the-nao",
+      "description": "Luật Hóa chất 2025 có hiệu lực từ 1/1/2026 sẽ nâng cao tiêu chuẩn an toàn và thúc đẩy công nghiệp xanh, đặt ra thách thức tuân thủ mới cho doanh nghiệp.",
+      "author": "Cao Nguyễn Bảo Liên - Nguyễn Việt Hùng",
+      "publish_date": "2025-11-11T10:00:00",
+      "keywords": [
+        "Luật Hóa chất 2025",
+        "an toàn hóa chất",
+        "doanh nghiệp",
+        "công nghiệp xanh",
+        "pháp lý"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": [],
+        "organizations": []
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": "2026",
+      "investment_capital": null,
+      "key_figures": ["Hiệu lực thi hành: 01/01/2026"]
+    },
+    "related_articles": [
+      {
+        "title": "Sửa Luật hóa chất: bổ sung ưu đãi cho ngành công nghiệp hóa chất trọng điểm",
+        "category": "Chính sách"
+      },
+      {
+        "title": "Nhiều quy định tại Luật chất lượng sản phẩm, hàng hóa chưa phù hợp thực tế",
+        "category": "Chính sách"
+      }
+    ]
+  },
+  {
+    "file_source": "92.txt",
+    "main_article": {
+      "title": "Rau Đà Lạt ‘đội giá’ do mưa bão liên tiếp",
+      "slug": "rau-da-lat-doi-gia-do-mua-bao-lien-tiep",
+      "description": "Giá rau củ tại Đà Lạt tăng mạnh do mưa bão kéo dài làm giảm sản lượng, với mức tăng lên tới 10.000 đồng/kg đối với một số loại.",
+      "author": "Thùy Linh",
+      "publish_date": "2025-11-10T16:02:00",
+      "keywords": ["rau Đà Lạt", "giá cả", "mưa bão", "nông sản", "Lâm Đồng"],
+      "entities": {
+        "locations": ["Đà Lạt", "Lâm Đồng"],
+        "people": [],
+        "organizations": []
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "Giá ớt chuông/bó xôi: 40.000 - 45.000 đồng/kg",
+        "Mức tăng: 8.000 - 10.000 đồng/kg"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "Giá rau Đà Lạt tăng vọt sau các đợt mưa lớn",
+        "category": "Kinh doanh"
+      },
+      {
+        "title": "Mưa kéo dài, nhiều loại rau Đà Lạt tăng giá",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "93.txt",
+    "main_article": {
+      "title": "Phân loại rủi ro và tương lai của AI Việt Nam",
+      "slug": "phan-loai-rui-ro-va-tuong-lai-cua-ai-viet-nam",
+      "description": "Dự thảo Luật Trí tuệ nhân tạo đang được xây dựng sẽ định hình tương lai AI tại Việt Nam thông qua cơ chế phân loại rủi ro để cân bằng giữa đổi mới và kiểm soát.",
+      "author": "Lưu Minh Sang - Trịnh Ngọc Nam",
+      "publish_date": "2025-11-10T16:00:00",
+      "keywords": [
+        "AI",
+        "Luật Trí tuệ nhân tạo",
+        "phân loại rủi ro",
+        "công nghệ",
+        "startup"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": [],
+        "organizations": []
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": [
+      {
+        "title": "Dự thảo Luật Trí tuệ nhân tạo: những vấn đề chính và khuyến nghị",
+        "category": "Công nghệ"
+      },
+      {
+        "title": "Bước vào kỷ nguyên chuyển đổi số, trí tuệ nhân tạo và robotics",
+        "category": "Công nghệ"
+      }
+    ]
+  },
+  {
+    "file_source": "94.txt",
+    "main_article": {
+      "title": "‘Vàng đen’ của Việt Nam mang về gần 1,4 tỉ đô la sau 10 tháng",
+      "slug": "vang-den-cua-viet-nam-mang-ve-gan-1-4-ti-do-la-sau-10-thang",
+      "description": "Xuất khẩu hồ tiêu (vàng đen) của Việt Nam đạt gần 1,4 tỷ USD trong 10 tháng đầu năm, tăng hơn 25% về giá trị bất chấp xu hướng giá giảm gần đây.",
+      "author": "Gia Nghi",
+      "publish_date": "2025-11-10T14:47:00",
+      "keywords": ["hồ tiêu", "vàng đen", "xuất khẩu", "VPSA", "nông sản"],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": [],
+        "organizations": ["Hiệp hội Hồ tiêu và Cây gia vị Việt Nam (VPSA)"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2025",
+      "investment_capital": null,
+      "key_figures": [
+        "Kim ngạch 10 tháng: ~1,4 tỷ USD",
+        "Xuất khẩu tháng 10: 19.430 tấn",
+        "Kim ngạch tháng 10: 129 triệu USD"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "Giá hồ tiêu tăng mạnh, xuất khẩu 9 tháng gần chạm mốc cả năm 2024",
+        "category": "Kinh doanh"
+      },
+      { "title": "Xuất khẩu hồ tiêu vượt 1 tỉ đô la", "category": "Kinh doanh" }
+    ]
+  },
+  {
+    "file_source": "95.txt",
+    "main_article": {
+      "title": "Giá cà phê arabica tiến sát mốc 9.000 đô la/tấn",
+      "slug": "gia-ca-phe-arabica-tien-sat-moc-9000-do-la-tan",
+      "description": "Giá cà phê thế giới biến động mạnh với Arabica tiến sát 9.000 USD/tấn và Robusta đạt 4.648 USD/tấn do lo ngại về nguồn cung.",
+      "author": "Bình Dương",
+      "publish_date": "2025-11-10T10:50:00",
+      "keywords": ["cà phê", "arabica", "robusta", "giá cả", "xuất khẩu"],
+      "entities": {
+        "locations": ["Brazil", "Anh", "Việt Nam"],
+        "people": [],
+        "organizations": ["Sở Giao dịch Hàng hóa Việt Nam (MXV)"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "Giá Arabica: ~9.000 USD/tấn",
+        "Giá Robusta: 4.648 USD/tấn"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "Giá cà phê tăng hơn 50%, xuất khẩu đạt kỷ lục 8,4 tỉ đô la",
+        "category": "Kinh doanh"
+      },
+      {
+        "title": "Xuất khẩu cà phê sang Anh tăng mạnh, Việt Nam vươn lên vị trí thứ hai sau Brazil",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "96.txt",
+    "main_article": {
+      "title": "Đằng sau sự phát triển ‘quá nóng’ của hai loại trái cây tỉ đô",
+      "slug": "dang-sau-su-phat-trien-qua-nong-cua-hai-loai-trai-cay-ti-do",
+      "description": "Sự phát triển quá nóng của sầu riêng và dừa dẫn đến tình trạng ùn ứ, rớt giá mạnh do quá tải kiểm định và phụ thuộc vào thị trường Trung Quốc.",
+      "author": "Ricky Hồ",
+      "publish_date": "2025-11-10T10:00:00",
+      "keywords": [
+        "sầu riêng",
+        "dừa",
+        "xuất khẩu",
+        "Trung Quốc",
+        "phát triển nóng"
+      ],
+      "entities": {
+        "locations": ["Đắk Lắk", "Trung Quốc", "ĐBSCL"],
+        "people": [],
+        "organizations": []
+      },
+      "sentiment": "negative"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": ["Giá sầu riêng Đắk Lắk: giảm 60-65%"]
+    },
+    "related_articles": [
+      {
+        "title": "Xuất khẩu sầu riêng thông suốt trở lại sau một tuần ách tắc",
+        "category": "Kinh doanh"
+      },
+      {
+        "title": "Sầu riêng bứt phá, xuất khẩu rau quả 8 tháng tiến sát mốc 5 tỉ đô",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "97.txt",
+    "main_article": {
+      "title": "Cần Thơ sẽ có nhà máy điện sinh khối 150MW từ rơm và trấu",
+      "slug": "can-tho-se-co-nha-may-dien-sinh-khoi-150mw-tu-rom-va-trau",
+      "description": "Công ty VNPD chuẩn bị đầu tư nhà máy điện sinh khối công suất 150MW tại Cần Thơ, sử dụng phụ phẩm nông nghiệp để phát điện và giảm phát thải CO2.",
+      "author": "Lạc Long",
+      "publish_date": "2025-11-10T09:20:00",
+      "keywords": [
+        "điện sinh khối",
+        "Cần Thơ",
+        "rơm trấu",
+        "năng lượng sạch",
+        "VNPD"
+      ],
+      "entities": {
+        "locations": ["Cần Thơ", "xã Vĩnh Trinh"],
+        "people": [],
+        "organizations": ["Công ty Phát triển điện lực Việt Nam (VNPD)"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": [
+        "Công suất: 150MW",
+        "Diện tích: > 24 ha",
+        "Giảm phát thải: > 560.000 tấn CO2/năm"
+      ]
+    },
+    "related_articles": [
+      {
+        "title": "Điều chỉnh quy hoạch điện VIII: cần khai thác tiềm năng phát triển điện sinh khối",
+        "category": "Năng lượng"
+      },
+      {
+        "title": "Quảng Trị chấp thuận hai dự án điện gió trị giá hơn 3.498 tỉ đồng",
+        "category": "Năng lượng"
+      }
+    ]
+  },
+  {
+    "file_source": "98.txt",
+    "main_article": {
+      "title": "Niên vụ mới còn hoành tráng như năm cũ?",
+      "slug": "nien-vu-moi-con-hoanh-trang-nhu-nam-cu",
+      "description": "Niên vụ cà phê mới 2025-2026 bắt đầu với giá nội địa cao kỷ lục, nhưng thị trường giao dịch trầm lắng do tâm lý giữ hàng của nông dân và sự thận trọng của doanh nghiệp.",
+      "author": "Nguyễn Quang Bình",
+      "publish_date": "2025-11-08T19:00:00",
+      "keywords": [
+        "cà phê",
+        "niên vụ mới",
+        "giá cà phê",
+        "xuất khẩu",
+        "nông dân"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": ["Nguyễn Quang Bình"],
+        "organizations": []
+      },
+      "sentiment": "neutral"
+    },
+    "key_statistics": {
+      "target_year": "2026",
+      "investment_capital": null,
+      "key_figures": ["Giá cà phê nội địa: ~115 triệu đồng/tấn"]
+    },
+    "related_articles": [
+      {
+        "title": "Giá cà phê tăng hơn 50%, xuất khẩu đạt kỷ lục 8,4 tỉ đô la",
+        "category": "Kinh doanh"
+      },
+      {
+        "title": "Thị trường cà phê ảm đạm dù xuất khẩu nhích nhẹ",
+        "category": "Kinh doanh"
+      }
+    ]
+  },
+  {
+    "file_source": "99.txt",
+    "main_article": {
+      "title": "Gia hạn miễn thuế đất nông nghiệp đến hết năm 2030",
+      "slug": "gia-han-mien-thue-dat-nong-nghiep-den-het-nam-2030",
+      "description": "Chính phủ ban hành Nghị định 292/2025/NĐ-CP kéo dài thời hạn miễn thuế sử dụng đất nông nghiệp đến hết năm 2030 nhằm hỗ trợ nông dân và hợp tác xã.",
+      "author": "Thu Trà",
+      "publish_date": "2025-11-08T10:48:00",
+      "keywords": [
+        "miễn thuế",
+        "đất nông nghiệp",
+        "Nghị định 292",
+        "hỗ trợ nông dân",
+        "Chính phủ"
+      ],
+      "entities": {
+        "locations": ["Việt Nam"],
+        "people": [],
+        "organizations": ["Chính phủ", "Quốc hội"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": "2030",
+      "investment_capital": null,
+      "key_figures": ["Thời hạn miễn thuế: đến hết 31/12/2030"]
+    },
+    "related_articles": [
+      {
+        "title": "Bộ Tài chính muốn giảm mức thu khi chuyển đổi đất nông nghiệp sang đất ở",
+        "category": "Chính sách"
+      },
+      {
+        "title": "Sẽ giảm chi phí chuyển đổi đất nông nghiệp",
+        "category": "Chính sách"
+      }
+    ]
+  },
+  {
+    "file_source": "100.txt",
+    "main_article": {
+      "title": "Nhãn carbon, tấm ‘hộ chiếu xanh’ cho hàng xuất khẩu Việt Nam",
+      "slug": "nhan-carbon-tam-ho-chieu-xanh-cho-hang-xuat-khau-viet-nam",
+      "description": "Chương trình dán nhãn carbon tự nguyện đang được thiết kế nhằm giúp doanh nghiệp Việt Nam đáp ứng tiêu chuẩn quốc tế như CBAM và thúc đẩy sản xuất bền vững.",
+      "author": "Hồng Văn",
+      "publish_date": "2025-11-07T16:04:00",
+      "keywords": [
+        "nhãn carbon",
+        "hộ chiếu xanh",
+        "xuất khẩu",
+        "CBAM",
+        "phát triển bền vững"
+      ],
+      "entities": {
+        "locations": ["Việt Nam", "Trung Quốc", "EU"],
+        "people": ["Hồng Văn"],
+        "organizations": ["Liên minh châu Âu (EU)"]
+      },
+      "sentiment": "positive"
+    },
+    "key_statistics": {
+      "target_year": null,
+      "investment_capital": null,
+      "key_figures": []
+    },
+    "related_articles": [
+      {
+        "title": "Trung Quốc dán nhãn ‘dấu ấn’ carbon cho nông sản",
+        "category": "Kinh doanh"
+      },
+      {
+        "title": "CBAM và bẫy carbon: khi chi phí phát thải trở thành rủi ro tài chính mới của doanh nghiệp Việt",
+        "category": "Kinh doanh"
+      }
+    ]
+  }
+]
