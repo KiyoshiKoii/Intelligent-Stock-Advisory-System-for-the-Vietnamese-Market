@@ -1,4 +1,4 @@
-name: machineLearning_project
+name: introml_project
 channels:
   - conda-forge
   - defaults
