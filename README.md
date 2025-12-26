@@ -6,7 +6,7 @@ Using conda:
 
 ```bash
 conda env create -f environment.yml
-conda activate introds_project
+conda activate machineLearning_project
 ```
 
 Using mamba (recommended for speed):
@@ -20,4 +20,4 @@ conda config --set channel_priority strict
 
 # Create the environment with mamba and activate it
 mamba env create -f environment.yml
-conda activate introds_project
+conda activate machineLearning_project
