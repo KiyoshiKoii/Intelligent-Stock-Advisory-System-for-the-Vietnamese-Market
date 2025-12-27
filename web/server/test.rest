@@ -1,0 +1,13 @@
+url= 
+
+###
+GET http://127.0.0.1:5000 
+
+###
+GET http://127.0.0.1:5000/vn30-list
+
+###
+GET http://127.0.0.1:5000/vn30-history?days=30
+
+###
+GET http://127.0.0.1:5000/stock/ACB?days=30
