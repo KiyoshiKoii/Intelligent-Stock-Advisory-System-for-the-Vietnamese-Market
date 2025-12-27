@@ -24,42 +24,74 @@ app.add_middleware(
     allow_origins=[
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
 ],
     allow_credentials=True,
     allow_methods=["*"],
-    allow_headers=["*"],
 )
 
 # --- Helper Functions ---
 
+# Simple in-memory caches to reduce provider calls and avoid rate limits
+CACHE = {
+    "vn30_list": {"ts": None, "data": []},
+    "vn30_history": {},  # keyed by days: { days: {"ts": datetime, "data": {...}, "metadata": {...}} }
+}
+
+CACHE_TTL_SYMBOLS_SECONDS = 600  # 10 minutes
+CACHE_TTL_HISTORY_SECONDS = 300   # 5 minutes
+
+def _now():
+    return datetime.now()
+
+def _is_fresh(ts, ttl_seconds):
+    return ts is not None and (_now() - ts).total_seconds() < ttl_seconds
+
 def get_vn30_symbols():
     """Lấy danh sách mã chứng khoán thuộc rổ VN30"""
+    # Return cached list if still fresh
+    cached = CACHE.get("vn30_list", {})
+    if _is_fresh(cached.get("ts"), CACHE_TTL_SYMBOLS_SECONDS):
+        return cached.get("data", [])
+
     try:
         listing = Listing(source='VCI')
         # Theo tài liệu: Liệt kê mã theo nhóm phân loại VN30
-        vn30_data = listing.symbols_by_group('VN30')
-        
+        try:
+            vn30_data = listing.symbols_by_group('VN30')
+        except SystemExit as se:
+            # Rate limited by provider; fall back to stale cache if available
+            print(f"Rate limit while fetching VN30 list: {se}")
+            if cached.get("data"):
+                return cached.get("data")
+            return []
+
         # Kiểm tra kiểu dữ liệu trả về
         if isinstance(vn30_data, pd.Series):
-            # Nếu là Series, chuyển thành list trực tiếp
             symbols = vn30_data.tolist()
-            print(f"VN30 symbols (Series): {symbols}")
-            return symbols
         elif isinstance(vn30_data, pd.DataFrame):
-            # Nếu là DataFrame
-            print(f"VN30 DataFrame columns: {vn30_data.columns.tolist()}")
             if 'symbol' in vn30_data.columns:
-                return vn30_data['symbol'].tolist()
+                symbols = vn30_data['symbol'].tolist()
             elif 'ticker' in vn30_data.columns:
-                return vn30_data['ticker'].tolist()
+                symbols = vn30_data['ticker'].tolist()
             elif len(vn30_data.columns) > 0:
-                return vn30_data.iloc[:, 0].tolist()
-        
-        return []
+                symbols = vn30_data.iloc[:, 0].tolist()
+            else:
+                symbols = []
+        else:
+            symbols = []
+
+        # Update cache
+        CACHE["vn30_list"] = {"ts": _now(), "data": symbols}
+        return symbols
     except Exception as e:
         print(f"Lỗi khi lấy danh sách VN30: {e}")
         import traceback
         traceback.print_exc()
+        # Fallback to stale cache if present
+        if cached.get("data"):
+            return cached.get("data")
         return []
 
 def get_stock_history(symbol: str, start_date: str, end_date: str):
@@ -68,7 +100,12 @@ def get_stock_history(symbol: str, start_date: str, end_date: str):
         # Khởi tạo đối tượng Quote như trong tài liệu
         quote = Quote(symbol=symbol, source='VCI') 
         # Hàm history thường dùng định dạng YYYY-MM-DD
-        df = quote.history(start=start_date, end=end_date, interval='1D')
+        try:
+            df = quote.history(start=start_date, end=end_date, interval='1D')
+        except SystemExit as se:
+            # Provider rate limit; surface as empty to trigger fallback
+            print(f"Rate limit while fetching history for {symbol}: {se}")
+            return pd.DataFrame()
         return df
     except Exception as e:
         print(f"Lỗi khi lấy dữ liệu {symbol}: {e}")
@@ -96,31 +133,49 @@ def get_vn30_history_data(days: int = 30):
     end_date = datetime.now().strftime('%Y-%m-%d')
     start_date = (datetime.now() - timedelta(days=days)).strftime('%Y-%m-%d')
     
+    # Serve cached history if fresh
+    cached_days = CACHE["vn30_history"].get(days)
+    if cached_days and _is_fresh(cached_days.get("ts"), CACHE_TTL_HISTORY_SECONDS):
+        return {
+            "metadata": cached_days.get("metadata"),
+            "data": cached_days.get("data"),
+        }
+
     symbols = get_vn30_symbols()
-    
     if not symbols:
+        # Try serving stale cached history if available
+        if cached_days:
+            return {
+                "metadata": cached_days.get("metadata"),
+                "data": cached_days.get("data"),
+            }
         raise HTTPException(status_code=500, detail="Không thể lấy danh sách VN30")
 
     result_data = {}
-    
     for sym in symbols:
         df = get_stock_history(sym, start_date, end_date)
         if not df.empty:
-            # Chuyển DataFrame thành Dictionary để trả về JSON
-            # orient='records' sẽ tạo list các object [{date:..., close:...}, ...]
             result_data[sym] = df.to_dict(orient='records')
         else:
-            result_data[sym] = "No data found"
-            
-    return {
+            # On rate limit or no data, keep previous cached symbol data if present
+            if cached_days and cached_days.get("data", {}).get(sym):
+                result_data[sym] = cached_days["data"][sym]
+            else:
+                result_data[sym] = "No data found"
+
+    payload = {
         "metadata": {
             "source": "VCI/VNStock",
             "start_date": start_date,
             "end_date": end_date,
-            "group": "VN30"
+            "group": "VN30",
         },
-        "data": result_data
+        "data": result_data,
     }
+
+    # Update cache
+    CACHE["vn30_history"][days] = {"ts": _now(), "data": result_data, "metadata": payload["metadata"]}
+    return payload
 
 @app.get("/stock/{symbol}")
 def get_single_stock(symbol: str, days: int = 30):

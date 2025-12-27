@@ -4,8 +4,8 @@
   "description": "Intelligent Stock Advisory System for the Vietnamese Market",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"bash start-server.sh\" \"pnpm client\"",
-    "server": "bash start-server.sh",
+    "dev": "concurrently \"cd server && uvicorn main:app --reload --port 5000 --host 0.0.0.0\" \"pnpm client\"",
+    "server": "cd server && uvicorn main:app --reload --port 5000 --host 0.0.0.0",
     "client": "pnpm --filter client dev",
     "build": "pnpm --filter client build",
     "install:all": "pnpm install",
