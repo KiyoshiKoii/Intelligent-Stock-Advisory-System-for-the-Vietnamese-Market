@@ -113,14 +113,14 @@ const TopRecommendations = () => {
   if (error) {
     return (
       <div className="mb-10 p-5 rounded-lg bg-red-900/20 border border-red-700">
-        <h2 className="text-red-400 text-2xl md:text-[28px] font-bold text-center mb-6">⚠️ {error}</h2>
+        <h2 className="text-red-400 text-2xl md:text-[28px] font-bold text-center mb-6">{error}</h2>
       </div>
     );
   }
 
   return (
     <div className="mb-10">
-      <h2 className="text-slate-100 text-2xl md:text-[28px] font-bold text-center mb-6">🏆 Khuyến nghị theo nhóm xác suất</h2>
+      <h2 className="text-slate-100 text-2xl md:text-[28px] font-bold text-center mb-6"> Khuyến nghị theo nhóm xác suất</h2>
 
       <GroupList
         title="Cổ phiếu đáng mua"

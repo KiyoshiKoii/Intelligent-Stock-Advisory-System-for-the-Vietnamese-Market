@@ -26,18 +26,11 @@ source venv/bin/activate
 ## Cài đặt dependencies:
 
 ```bash
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 
-## Chạy server:
+## Chạy server (từ thư mục server):
 
 ```bash
-cd src
 uvicorn main:app --reload --port 5000
-```
-
-hoặc từ root của server:
-
-```bash
-uvicorn src.main:app --reload --port 5000
 ```

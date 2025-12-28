@@ -2,7 +2,6 @@ requests
 pandas
 vnstock
 fastapi
-uvicorn 
-pandas
+uvicorn
 joblib
 scikit-learn==1.3.1

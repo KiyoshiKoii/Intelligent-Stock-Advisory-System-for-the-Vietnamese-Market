@@ -186,9 +186,7 @@ const Board = () => {
             <th className='px-3 py-2 font-semibold'>Tổng KL</th>
             <th className='px-3 py-2 font-semibold'>Cao</th>
             <th className='px-3 py-2 font-semibold'>Thấp</th>
-            <th className='px-3 py-2 font-semibold' colSpan={3}>
-              ĐTNN
-            </th>
+
           </tr>
           <tr className='bg-slate-800 text-slate-400'>
             <th className='sticky left-0 bg-slate-800 px-3 py-2'></th>
@@ -218,10 +216,7 @@ const Board = () => {
             <th className='px-3 py-2'>Tổng KL</th>
             <th className='px-3 py-2'>Cao</th>
             <th className='px-3 py-2'>Thấp</th>
-            {/* ĐTNN */}
-            <th className='px-3 py-2'>NN mua</th>
-            <th className='px-3 py-2'>NN bán</th>
-            <th className='px-3 py-2'>Room</th>
+
           </tr>
         </thead>
         <tbody>
@@ -312,16 +307,7 @@ const Board = () => {
                 {r.high.toFixed(2)}
               </td>
               <td className='px-3 py-2 text-red-400'>{r.low.toFixed(2)}</td>
-              {/* ĐTNN */}
-              <td className='px-3 py-2 text-slate-200'>
-                {numberFormat(r.foreign.buy)}
-              </td>
-              <td className='px-3 py-2 text-slate-200'>
-                {numberFormat(r.foreign.sell)}
-              </td>
-              <td className='px-3 py-2 text-slate-200'>
-                {numberFormat(r.foreign.room)}
-              </td>
+
             </tr>
           ))}
         </tbody>
@@ -351,72 +337,98 @@ const Board = () => {
       </div>
 
       {selectedSymbol && Array.isArray(historyMap[selectedSymbol]) && (
-        <div className='bg-white border-t border-slate-200 p-4'>
-          <div className='flex items-center justify-between mb-3'>
-            <h3 className='text-sm font-semibold text-slate-700'>
-              Lịch sử: <span className='text-indigo-600'>{selectedSymbol}</span>
-            </h3>
-            <button
-              className='text-xs px-2 py-1 border rounded hover:bg-slate-50'
-              onClick={() => setSelectedSymbol(null)}
-            >
-              Đóng
-            </button>
-          </div>
+  <div className='bg-[#0B0F1A] border-t border-slate-800 p-6 rounded-b-xl shadow-2xl'>
+    <div className='flex items-center justify-between mb-6'>
+      <div className="flex items-center">
+        {/* Thanh trang trí màu sắc xanh theo style AI */}
+        <div className="w-1 h-6 bg-gradient-to-b from-emerald-400 to-cyan-500 rounded-full mr-3 shadow-[0_0_10px_rgba(16,185,129,0.4)]"></div>
+        <h3 className='text-base font-bold text-slate-100 uppercase tracking-wider'>
+          Lịch sử phân tích: <span className='text-emerald-400'>{selectedSymbol}</span>
+        </h3>
+      </div>
+      <button
+        className='text-[10px] uppercase font-bold tracking-widest px-4 py-2 border border-slate-700 rounded-md text-slate-400 hover:bg-slate-800 hover:text-emerald-400 hover:border-emerald-500/50 transition-all duration-300'
+        onClick={() => setSelectedSymbol(null)}
+      >
+        Đóng
+      </button>
+    </div>
 
-          <div className='h-96'>
-            <ResponsiveContainer width='100%' height='100%'>
-              <ComposedChart
-                data={historyMap[selectedSymbol] || []}
-                margin={{ top: 10, right: 0, left: 0, bottom: 0 }}
-              >
-                <CartesianGrid strokeDasharray='3 3' vertical={false} />
-                <XAxis
-                  dataKey='time'
-                  tickFormatter={(iso) =>
-                    new Date(iso).toLocaleDateString("vi-VN")
-                  }
-                  tick={{ fontSize: 11 }}
-                />
-                <YAxis
-                  yAxisId='price'
-                  domain={["auto", "auto"]}
-                  tickFormatter={(value) => Number(value).toFixed(2)}
-                />
-                <YAxis
-                  yAxisId='vol'
-                  orientation='right'
-                  domain={["auto", "auto"]}
-                  tickFormatter={(v) => numberFormat(v)}
-                />
-                <Tooltip
-                  formatter={(value, name) => {
-                    return [Number(value).toFixed(2), name];
-                  }}
-                  labelFormatter={(label) =>
-                    `Ngày: ${new Date(label).toLocaleDateString("vi-VN")}`
-                  }
-                  contentStyle={{
-                    backgroundColor: "#fff",
-                    borderRadius: "8px",
-                  }}
-                />
-                <Legend />
+    <div className='h-80 w-full'>
+      <ResponsiveContainer width='100%' height='100%'>
+        <ComposedChart
+          data={historyMap[selectedSymbol] || []}
+          margin={{ top: 10, right: 10, left: -20, bottom: 0 }}
+        >
+          {/* Định nghĩa Gradient cho đường Line đổ bóng phía dưới */}
+          <defs>
+            <linearGradient id="lineGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="5%" stopColor="#10B981" stopOpacity={0.3}/>
+              <stop offset="95%" stopColor="#10B981" stopOpacity={0}/>
+            </linearGradient>
+          </defs>
 
-                <Line
-                  yAxisId='price'
-                  type='linear'
-                  dataKey='open'
-                  stroke='#4f46e5'
-                  strokeWidth={1.5}
-                  dot={{ r: 2 }}
-                  name='Mở'
-                />
-              </ComposedChart>
-            </ResponsiveContainer>
-          </div>
-        </div>
-      )}
+          {/* Lưới: stroke hẹp và mờ */}
+          <CartesianGrid strokeDasharray='3 3' stroke="#1E293B" vertical={false} />
+          
+          <XAxis
+            dataKey='time'
+            tickFormatter={(iso) => new Date(iso).toLocaleDateString("vi-VN")}
+            tick={{ fontSize: 10, fill: '#64748B', fontWeight: 500 }}
+            axisLine={{ stroke: '#1E293B' }}
+            tickLine={false}
+            dy={10}
+          />
+          
+          <YAxis
+            yAxisId='price'
+            domain={["auto", "auto"]}
+            tickFormatter={(v) => v.toLocaleString()}
+            tick={{ fontSize: 10, fill: '#64748B', fontWeight: 500 }}
+            axisLine={false}
+            tickLine={false}
+          />
+
+          {/* Tooltip: Quan trọng nhất để xóa màu trắng */}
+          <Tooltip
+            contentStyle={{
+              backgroundColor: "#161B26",
+              border: "1px solid #334155",
+              borderRadius: "8px",
+              boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.5)",
+            }}
+            itemStyle={{ fontSize: '12px', color: '#10B981', fontWeight: 'bold' }}
+            labelStyle={{ color: '#94A3B8', fontSize: '11px', marginBottom: '4px' }}
+            cursor={{ stroke: '#334155', strokeWidth: 1 }}
+            labelFormatter={(label) => `Thời gian: ${new Date(label).toLocaleDateString("vi-VN")}`}
+          />
+          
+          {/* Chú thích (Legend): Chỉnh màu chữ thành Slate-300 */}
+          <Legend 
+            verticalAlign="top" 
+            align="right"
+            iconType="diamond"
+            wrapperStyle={{ paddingBottom: '20px', color: '#CBD5E1', fontSize: '11px' }} 
+          />
+
+          {/* Đường Line chính */}
+          <Line
+            yAxisId='price'
+            type='linear'
+            dataKey='close' /* Thường dùng giá đóng cửa (close) thay vì open cho lịch sử */
+            stroke='#10B981'
+            strokeWidth={2.5}
+            dot={{ r: 0 }} /* Ẩn các chấm mặc định để trông mượt hơn */
+            activeDot={{ r: 5, fill: '#10B981', stroke: '#fff', strokeWidth: 2 }}
+            name='Giá Đóng Cửa'
+            style={{ filter: "drop-shadow(0px 4px 8px rgba(16, 185, 129, 0.3))" }}
+            animationDuration={1000}
+          />
+        </ComposedChart>
+      </ResponsiveContainer>
+    </div>
+  </div>
+)}
     </div>
   );
 };
