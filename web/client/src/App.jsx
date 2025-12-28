@@ -1,7 +1,6 @@
 import React from "react";
 import TopRecommendations from "./components/TopRecommendations";
 import Board from "./components/Board";
-import VN30History from "./components/History";
 
 function App() {
   return (
