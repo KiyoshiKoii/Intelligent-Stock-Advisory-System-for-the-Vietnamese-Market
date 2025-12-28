@@ -11,13 +11,17 @@ if sys.platform == 'win32':
         sys.stderr.reconfigure(encoding='utf-8')
 
 from fastapi import FastAPI, HTTPException
+from fastapi.encoders import jsonable_encoder
+from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from vnstock import Listing, Quote
 from datetime import datetime, timedelta
 import pandas as pd
+import numpy as np
 from typing import Dict, Any, List
 import os
 import joblib
+from service.model_service_wrapper import run_model_on_top100
 def _find_repo_root(start_path: str) -> str:
     cur = os.path.abspath(start_path)
     for _ in range(6):
@@ -51,16 +55,35 @@ app.add_middleware(
 CACHE = {
     "vn30_list": {"ts": None, "data": []},
     "vn30_history": {},  # keyed by days: { days: {"ts": datetime, "data": {...}, "metadata": {...}} }
+    "symbol_history": {},  # keyed by f"{symbol}|{days}": {"ts": datetime, "df": pd.DataFrame}
+    "model_input": {},     # keyed by f"{symbol}|{source}|{days}": {"ts": datetime, "df": pd.DataFrame}
 }
 
 CACHE_TTL_SYMBOLS_SECONDS = 600  # 10 minutes
 CACHE_TTL_HISTORY_SECONDS = 300   # 5 minutes
+CACHE_TTL_SYMBOL_HISTORY_SECONDS = 600  # 10 minutes for per-symbol history
+CACHE_TTL_MODEL_INPUT_SECONDS = 600     # 10 minutes for model input per symbol
 
 def _now():
     return datetime.now()
 
 def _is_fresh(ts, ttl_seconds):
     return ts is not None and (_now() - ts).total_seconds() < ttl_seconds
+
+def _cache_dir() -> str:
+    d = os.path.join(os.path.dirname(__file__), 'cache')
+    try:
+        os.makedirs(d, exist_ok=True)
+    except Exception:
+        pass
+    return d
+
+def _save_csv_safe(path: str, df: pd.DataFrame):
+    try:
+        df.to_csv(path, index=False)
+    except Exception as e:
+        # Avoid breaking flow if cannot save
+        print(f"Could not save CSV {path}: {e}")
 
 def get_vn30_symbols():
     """Lấy danh sách mã chứng khoán thuộc rổ VN30"""
@@ -277,14 +300,35 @@ def get_single_stock(symbol: str, days: int = 30):
     """Lấy lịch sử của 1 mã bất kỳ"""
     end_date = datetime.now().strftime('%Y-%m-%d')
     start_date = (datetime.now() - timedelta(days=days)).strftime('%Y-%m-%d')
+    symbol_u = symbol.upper()
+
+    # Try cache first
+    cache_key = f"{symbol_u}|{int(days)}"
+    cached = CACHE["symbol_history"].get(cache_key)
+    if cached and _is_fresh(cached.get("ts"), CACHE_TTL_SYMBOL_HISTORY_SECONDS):
+        df_cached: pd.DataFrame = cached.get("df")
+        if df_cached is not None and not df_cached.empty:
+            return {
+                "symbol": symbol_u,
+                "data": df_cached.to_dict(orient='records')
+            }
     
-    df = get_stock_history(symbol.upper(), start_date, end_date)
+    df = get_stock_history(symbol_u, start_date, end_date)
     if df.empty:
         raise HTTPException(status_code=404, detail="Symbol not found or no data")
-        
+
+    # Normalize and cache + persist
+    df_norm = _normalize_history_df(df, symbol_u)
+    CACHE["symbol_history"][cache_key] = {"ts": _now(), "df": df_norm}
+    try:
+        out_path = os.path.join(_cache_dir(), f"history_{symbol_u}.csv")
+        _save_csv_safe(out_path, df_norm)
+    except Exception:
+        pass
+
     return {
-        "symbol": symbol.upper(),
-        "data": df.to_dict(orient='records')
+        "symbol": symbol_u,
+        "data": df_norm.to_dict(orient='records')
     }
 
 @app.get("/model-input/{symbol}")
@@ -303,6 +347,19 @@ def get_model_input(symbol: str, days: int = 50, source: str = 'VNStock'):
     start_date = (datetime.now() - timedelta(days=max(days, 60))).strftime('%Y-%m-%d')
 
     df: pd.DataFrame = pd.DataFrame()
+
+    # Try cache first (model_input cache stores last-50 normalized rows)
+    cache_key_inp = f"{symbol}|{source.lower()}|{int(days)}"
+    cached_inp = CACHE["model_input"].get(cache_key_inp)
+    if cached_inp and _is_fresh(cached_inp.get("ts"), CACHE_TTL_MODEL_INPUT_SECONDS):
+        df_cached: pd.DataFrame = cached_inp.get("df")
+        if df_cached is not None and len(df_cached) >= 50:
+            df_50 = _slice_last_n(df_cached, 50)
+            return {
+                "symbol": symbol,
+                "count": len(df_50),
+                "data": df_50.to_dict(orient='records')
+            }
 
     if source.lower() == 'vnstock':
         df = get_stock_history(symbol, start_date, end_date)
@@ -373,6 +430,14 @@ def get_model_input(symbol: str, days: int = 50, source: str = 'VNStock'):
     if df_50.empty or len(df_50) < 50:
         raise HTTPException(status_code=404, detail="Không đủ dữ liệu 50 dòng cho mã này")
 
+    # Cache and persist model input
+    CACHE["model_input"][cache_key_inp] = {"ts": _now(), "df": df_50}
+    try:
+        out_path = os.path.join(_cache_dir(), f"model_input_{symbol}.csv")
+        _save_csv_safe(out_path, df_50)
+    except Exception:
+        pass
+
     return {
         "symbol": symbol,
         "count": len(df_50),
@@ -380,7 +445,7 @@ def get_model_input(symbol: str, days: int = 50, source: str = 'VNStock'):
     }
 
 @app.get("/predict/{symbol}")
-def predict_symbol(symbol: str, days: int = 60, source: str = 'VNStock'):
+def predict_symbol(symbol: str, days: int = 70, source: str = 'VNStock'):
     """
     Dự báo cho ngày mới nhất sử dụng mô hình lưu tại server/model/best_model.pkl.
     Trả về nhãn dự báo và xác suất mua (nếu có).
@@ -388,7 +453,7 @@ def predict_symbol(symbol: str, days: int = 60, source: str = 'VNStock'):
     # Build input using same logic as /model-input
     symbol_u = symbol.upper()
     end_date = datetime.now().strftime('%Y-%m-%d')
-    start_date = (datetime.now() - timedelta(days=max(days, 60))).strftime('%Y-%m-%d')
+    start_date = (datetime.now() - timedelta(days=max(days, 70))).strftime('%Y-%m-%d')
 
     df: pd.DataFrame = pd.DataFrame()
     if source.lower() == 'vnstock':
@@ -467,3 +532,103 @@ def predict_symbol(symbol: str, days: int = 60, source: str = 'VNStock'):
         "prob_buy": prob_buy,
         "rows": len(df_50),
     }
+
+
+@app.get("/predict-top100")
+def predict_top100(days: int = 60, source: str = 'local', limit: int = None, save_csv: bool = False):
+    """
+    Chạy dự báo cho Top 100 mã và trả về list được sắp xếp theo xác suất mua giảm dần.
+
+    - source: 'local' dùng dữ liệu đã tính sẵn (khuyến nghị nhanh/stable), 'VNStock' gọi provider.
+    - limit: giới hạn số mã đầu vào (ví dụ 20 để debug nhanh).
+    - save_csv: nếu True, ghi thêm file top100_predictions.csv tại thư mục server.
+    """
+    try:
+        df_res = run_model_on_top100(server_url='http://127.0.0.1:8000', days=days, source=source, limit=limit)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Prediction failed: {e}")
+
+    if df_res is None or df_res.empty:
+        raise HTTPException(status_code=500, detail="Không có kết quả dự báo")
+
+    # Clean NaN/inf to make JSON-safe
+    try:
+        df_res = df_res.replace([np.inf, -np.inf], np.nan)
+        # Cast to object to keep None, then replace all NaN/NaT with None for JSON safety
+        df_res = df_res.astype(object).where(pd.notna(df_res), None)
+    except Exception:
+        pass
+
+    records = df_res.to_dict(orient='records')
+
+    if save_csv:
+        out_path = os.path.join(os.path.dirname(__file__), 'top100_predictions.csv')
+        try:
+            df_res.to_csv(out_path, index=False)
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Không ghi được CSV: {e}")
+
+    payload = {
+        "count": len(records),
+        "source": source,
+        "data": records,
+    }
+
+    # Ensure JSON-safe (convert NaN/Inf to null) using FastAPI encoder
+    encoded = jsonable_encoder(payload)
+    return JSONResponse(content=encoded)
+
+
+@app.get("/predict-top100-csv")
+def predict_top100_csv(limit: int = None, sort: bool = True):
+    """
+    Trả về kết quả dự đoán từ file CSV đã lưu sẵn (không tính toán lại).
+    - Đọc file `web/server/top100_predictions.csv`
+    - Mặc định sắp xếp theo `prob_buy` giảm dần (NA xuống cuối). Có thể tắt sort.
+    - Có thể giới hạn số dòng trả về bằng `limit`.
+    """
+    csv_path = os.path.join(os.path.dirname(__file__), 'top100_predictions.csv')
+    if not os.path.exists(csv_path):
+        raise HTTPException(status_code=404, detail="CSV kết quả chưa tồn tại. Hãy chạy /predict-top100 với save_csv=true hoặc tạo file trước.")
+
+    try:
+        df = pd.read_csv(csv_path)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Không đọc được CSV: {e}")
+
+    # Chuẩn hóa kiểu dữ liệu
+    try:
+        if 'prob_buy' in df.columns:
+            df['prob_buy'] = pd.to_numeric(df['prob_buy'], errors='coerce')
+    except Exception:
+        pass
+
+    # Sắp xếp theo prob_buy giảm dần nếu yêu cầu
+    if sort and 'prob_buy' in df.columns:
+        try:
+            df = df.sort_values(['prob_buy', 'status'], ascending=[False, True], na_position='last')
+        except Exception:
+            pass
+
+    # Giới hạn số dòng nếu có
+    if limit is not None:
+        try:
+            df = df.head(int(limit))
+        except Exception:
+            pass
+
+    # Làm sạch NaN/Inf để trả JSON an toàn
+    try:
+        df = df.replace([np.inf, -np.inf], np.nan)
+        df = df.astype(object).where(pd.notna(df), None)
+    except Exception:
+        pass
+
+    records = df.to_dict(orient='records')
+    payload = {
+        "count": len(records),
+        "source": "csv",
+        "data": records,
+    }
+    encoded = jsonable_encoder(payload)
+    return JSONResponse(content=encoded)

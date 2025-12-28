@@ -24,4 +24,12 @@ export const stockAPI = {
     );
     return response.data;
   },
+
+  // Get top recommendations from saved CSV (server-side)
+  getTopRecommendationsCsv: async (limit = 100, sort = true) => {
+    const response = await axios.get(`${API_BASE_URL}/predict-top100-csv`, {
+      params: { limit, sort },
+    });
+    return response.data;
+  },
 };

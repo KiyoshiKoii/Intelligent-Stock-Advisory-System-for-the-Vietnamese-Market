@@ -11,3 +11,6 @@ GET http://127.0.0.1:5000/vn30-history?days=50
 
 ###
 GET http://127.0.0.1:5000/stock/ACB?days=30
+###
+
+GET http://127.0.0.1:5000/predict-top100?source=local&limit=100&save_csv=true

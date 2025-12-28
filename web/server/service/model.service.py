@@ -159,6 +159,12 @@ def predict_for_symbol(symbol: str, model_path: Optional[str] = None, server_url
         if df_input is None or len(df_input) < 50:
             return {"symbol": symbol.upper(), "status": "insufficient_input"}
 
+        # Clean missing values to avoid model errors (RandomForest does not accept NaN)
+        try:
+            df_input = df_input.ffill().bfill().fillna(0)
+        except Exception:
+            df_input = df_input.fillna(0)
+
         pipeline = joblib.load(model_path)
         y_pred = pipeline.predict(df_input)
         try:
@@ -199,9 +205,11 @@ def run_model_on_top100(model_path: Optional[str] = None, server_url: str = 'htt
         if c not in df_res.columns:
             df_res[c] = None
     df_res = df_res[cols]
-    # Sort by prob_buy descending where available
+
+    # Sort primarily by probability descending (place None at bottom), then by status
     try:
-        df_res = df_res.sort_values(['status','prob_buy'], ascending=[True, False])
+        df_res['prob_buy'] = pd.to_numeric(df_res['prob_buy'], errors='coerce')
+        df_res = df_res.sort_values(['prob_buy', 'status'], ascending=[False, True], na_position='last')
     except Exception:
         pass
     return df_res
