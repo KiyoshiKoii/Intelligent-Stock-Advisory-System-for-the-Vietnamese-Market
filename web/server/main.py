@@ -34,7 +34,7 @@ def _find_repo_root(start_path: str) -> str:
         cur = parent
     return os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
 
-app = FastAPI(title="VNStock API - VN30 History")
+app = FastAPI(title="VNStock API - Top 100 Stocks")
 
 # Configure CORS
 app.add_middleware(
@@ -53,8 +53,8 @@ app.add_middleware(
 
 # Simple in-memory caches to reduce provider calls and avoid rate limits
 CACHE = {
-    "vn30_list": {"ts": None, "data": []},
-    "vn30_history": {},  # keyed by days: { days: {"ts": datetime, "data": {...}, "metadata": {...}} }
+    "top100_list": {"ts": None, "data": []},
+    "top100_history": {},  # keyed by days: { days: {"ts": datetime, "data": {...}, "metadata": {...}} }
     "symbol_history": {},  # keyed by f"{symbol}|{days}": {"ts": datetime, "df": pd.DataFrame}
     "model_input": {},     # keyed by f"{symbol}|{source}|{days}": {"ts": datetime, "df": pd.DataFrame}
 }
@@ -85,45 +85,41 @@ def _save_csv_safe(path: str, df: pd.DataFrame):
         # Avoid breaking flow if cannot save
         print(f"Could not save CSV {path}: {e}")
 
-def get_vn30_symbols():
-    """Lấy danh sách mã chứng khoán thuộc rổ VN30"""
+def get_top100_symbols():
+    """Lấy danh sách Top 100 mã chứng khoán từ CSV"""
     # Return cached list if still fresh
-    cached = CACHE.get("vn30_list", {})
+    cached = CACHE.get("top100_list", {})
     if _is_fresh(cached.get("ts"), CACHE_TTL_SYMBOLS_SECONDS):
         return cached.get("data", [])
 
     try:
-        listing = Listing(source='VCI')
-        # Theo tài liệu: Liệt kê mã theo nhóm phân loại VN30
-        try:
-            vn30_data = listing.symbols_by_group('VN30')
-        except SystemExit as se:
-            # Rate limited by provider; fall back to stale cache if available
-            print(f"Rate limit while fetching VN30 list: {se}")
+        # Read from local top_100_stocks.csv instead of API
+        repo_root = _find_repo_root(os.path.dirname(__file__))
+        csv_path = os.path.join(repo_root, 'data', 'raw', 'top_100_stocks.csv')
+        
+        if not os.path.exists(csv_path):
+            print(f"Top 100 CSV not found at {csv_path}")
             if cached.get("data"):
                 return cached.get("data")
             return []
-
-        # Kiểm tra kiểu dữ liệu trả về
-        if isinstance(vn30_data, pd.Series):
-            symbols = vn30_data.tolist()
-        elif isinstance(vn30_data, pd.DataFrame):
-            if 'symbol' in vn30_data.columns:
-                symbols = vn30_data['symbol'].tolist()
-            elif 'ticker' in vn30_data.columns:
-                symbols = vn30_data['ticker'].tolist()
-            elif len(vn30_data.columns) > 0:
-                symbols = vn30_data.iloc[:, 0].tolist()
-            else:
-                symbols = []
+        
+        df = pd.read_csv(csv_path)
+        
+        # Try to find symbol column
+        if 'symbol' in df.columns:
+            symbols = df['symbol'].dropna().astype(str).str.upper().tolist()
+        elif 'ticker' in df.columns:
+            symbols = df['ticker'].dropna().astype(str).str.upper().tolist()
+        elif len(df.columns) > 0:
+            symbols = df.iloc[:, 0].dropna().astype(str).str.upper().tolist()
         else:
             symbols = []
 
         # Update cache
-        CACHE["vn30_list"] = {"ts": _now(), "data": symbols}
+        CACHE["top100_list"] = {"ts": _now(), "data": symbols}
         return symbols
     except Exception as e:
-        print(f"Lỗi khi lấy danh sách VN30: {e}")
+        print(f"Lỗi khi lấy danh sách Top 100: {e}")
         import traceback
         traceback.print_exc()
         # Fallback to stale cache if present
@@ -233,18 +229,18 @@ def _slice_last_n(df: pd.DataFrame, n: int) -> pd.DataFrame:
 
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to VNStock API. Use /vn30-history to get data."}
+    return {"message": "Welcome to VNStock API. Use /top100-history to get data."}
 
-@app.get("/vn30-list")
-def get_vn30_list():
-    """Trả về danh sách các mã trong VN30"""
-    symbols = get_vn30_symbols()
+@app.get("/top100-list")
+def get_top100_list():
+    """Trả về danh sách Top 100 mã chứng khoán"""
+    symbols = get_top100_symbols()
     return {"count": len(symbols), "symbols": symbols}
 
-@app.get("/vn30-history")
-def get_vn30_history_data(days: int = 30):
+@app.get("/top100-history")
+def get_top100_history_data(days: int = 30):
     """
-    Lấy dữ liệu lịch sử của toàn bộ VN30.
+    Lấy dữ liệu lịch sử của Top 100 mã.
     - days: Số ngày quá khứ muốn lấy (mặc định 30 ngày).
     """
     # Tính toán ngày bắt đầu và kết thúc
@@ -252,14 +248,14 @@ def get_vn30_history_data(days: int = 30):
     start_date = (datetime.now() - timedelta(days=days)).strftime('%Y-%m-%d')
     
     # Serve cached history if fresh
-    cached_days = CACHE["vn30_history"].get(days)
+    cached_days = CACHE["top100_history"].get(days)
     if cached_days and _is_fresh(cached_days.get("ts"), CACHE_TTL_HISTORY_SECONDS):
         return {
             "metadata": cached_days.get("metadata"),
             "data": cached_days.get("data"),
         }
 
-    symbols = get_vn30_symbols()
+    symbols = get_top100_symbols()
     if not symbols:
         # Try serving stale cached history if available
         if cached_days:
@@ -267,7 +263,7 @@ def get_vn30_history_data(days: int = 30):
                 "metadata": cached_days.get("metadata"),
                 "data": cached_days.get("data"),
             }
-        raise HTTPException(status_code=500, detail="Không thể lấy danh sách VN30")
+        raise HTTPException(status_code=500, detail="Không thể lấy danh sách Top 100")
 
     result_data = {}
     for sym in symbols:
@@ -283,16 +279,16 @@ def get_vn30_history_data(days: int = 30):
 
     payload = {
         "metadata": {
-            "source": "VCI/VNStock",
+            "source": "Local CSV + VNStock",
             "start_date": start_date,
             "end_date": end_date,
-            "group": "VN30",
+            "group": "Top100",
         },
         "data": result_data,
     }
 
     # Update cache
-    CACHE["vn30_history"][days] = {"ts": _now(), "data": result_data, "metadata": payload["metadata"]}
+    CACHE["top100_history"][days] = {"ts": _now(), "data": result_data, "metadata": payload["metadata"]}
     return payload
 
 @app.get("/stock/{symbol}")

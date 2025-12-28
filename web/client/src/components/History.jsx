@@ -97,16 +97,16 @@ const History = () => {
       try {
         setLoading(true);
         setError(null);
-        const listResp = await stockAPI.getVN30List();
+        const listResp = await stockAPI.getTop100List();
         const syms = Array.isArray(listResp?.symbols) ? listResp.symbols : [];
         if (mounted) setSymbols(syms);
 
-        const histResp = await stockAPI.getVN30History(days);
+        const histResp = await stockAPI.getTop100History(days);
         const dataObj = histResp?.data || {};
         if (mounted) setHistory(dataObj);
       } catch (e) {
-        console.error("VN30History load error", e);
-        if (mounted) setError("Không thể tải dữ liệu VN30.");
+        console.error("Top100History load error", e);
+        if (mounted) setError("Không thể tải dữ liệu Top 100.");
       } finally {
         if (mounted) setLoading(false);
       }
@@ -134,7 +134,7 @@ const History = () => {
     <section className='mt-10'>
       <div className='flex items-center justify-between mb-4'>
         <h2 className='text-xl font-semibold text-slate-800'>
-          Lịch sử giá VN30 (30 ngày)
+          Lịch sử giá Top 100 (30 ngày)
         </h2>
         <div className='flex items-center gap-2'>
           <label className='text-sm text-slate-600'>Ngày:</label>

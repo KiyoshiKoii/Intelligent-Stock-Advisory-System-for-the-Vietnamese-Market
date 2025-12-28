@@ -75,9 +75,28 @@ const Board = () => {
 
   const normalizeHistoryToRows = (historyObj) => {
     const rows = [];
+    const makeEmptyRow = (sym) => ({
+      symbol: sym,
+      tran: 0,
+      san: 0,
+      tc: 0,
+      buy: { g3: 0, kl3: 0, g2: 0, kl2: 0, g1: 0, kl1: 0 },
+      match: { price: 0, vol: 0, delta: 0, deltaPct: 0 },
+      sell: { g1: 0, kl1: 0, g2: 0, kl2: 0, g3: 0, kl3: 0 },
+      totalVol: 0,
+      high: 0,
+      low: 0,
+      foreign: { buy: 0, sell: 0, room: 0 },
+    });
+
     if (!historyObj || typeof historyObj !== "object") return rows;
+
     for (const [sym, series] of Object.entries(historyObj)) {
-      if (!Array.isArray(series) || series.length === 0) continue;
+      if (!Array.isArray(series) || series.length === 0) {
+        rows.push(makeEmptyRow(sym));
+        continue;
+      }
+
       const last = series[series.length - 1] || {};
       const prev = series.length >= 2 ? series[series.length - 2] : last;
       const totalVol = series.reduce((sum, d) => sum + (d.volume || 0), 0);
@@ -126,7 +145,7 @@ const Board = () => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const result = await stockAPI.getVN30History(30);
+        const result = await stockAPI.getTop100History(30);
         const dataObj = result?.data || {};
         const rows = normalizeHistoryToRows(dataObj);
         setData(rows);
@@ -307,6 +326,29 @@ const Board = () => {
           ))}
         </tbody>
       </table>
+
+      {/* Pagination Controls */}
+      <div className='bg-[#161B26] border-t border-slate-700 px-4 py-3 flex items-center justify-between'>
+        <div className='text-sm text-slate-300'>
+          Trang {page} / {totalPages} • Tổng: {rows.length} mã
+        </div>
+        <div className='flex gap-2'>
+          <button
+            className='px-3 py-1 rounded border border-slate-600 bg-[#1e293b] hover:bg-slate-700 disabled:opacity-50 disabled:cursor-not-allowed text-slate-200 text-sm'
+            onClick={() => setPage(p => Math.max(1, p - 1))}
+            disabled={page === 1}
+          >
+            ← Trước
+          </button>
+          <button
+            className='px-3 py-1 rounded border border-slate-600 bg-[#1e293b] hover:bg-slate-700 disabled:opacity-50 disabled:cursor-not-allowed text-slate-200 text-sm'
+            onClick={() => setPage(p => Math.min(totalPages, p + 1))}
+            disabled={page === totalPages}
+          >
+            Sau →
+          </button>
+        </div>
+      </div>
 
       {selectedSymbol && Array.isArray(historyMap[selectedSymbol]) && (
         <div className='bg-white border-t border-slate-200 p-4'>
