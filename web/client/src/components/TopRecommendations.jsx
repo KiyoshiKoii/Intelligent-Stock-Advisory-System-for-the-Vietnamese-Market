@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { stockAPI } from "../services/api";
+import Spinner from "./Spinner";
 
 const PAGE_SIZE = 10; // items per page per group
 
@@ -65,8 +66,16 @@ const TopRecommendations = () => {
       setLoading(true);
       setError(null);
       try {
-        // Request full list (API defaults to 100 when limit is omitted)
-        const res = await stockAPI.getTopRecommendationsCsv();
+        // Prefer live API compute; fallback to CSV if it fails
+        let res;
+        try {
+          // res = await stockAPI.getTopRecommendations({ source: "VNStock", limit: 100, save_csv: false, days: 60 });
+        // } catch (e1) {
+          res = await stockAPI.getTopRecommendationsCsv(100, true);
+        }
+        catch (e2) {
+          throw new Error("Không thể lấy dữ liệu đề xuất");
+        }
         const rows = Array.isArray(res?.data) ? res.data : [];
         // Filter valid rows (status ok and numeric prob)
         const cleaned = rows
@@ -105,7 +114,8 @@ const TopRecommendations = () => {
   if (loading) {
     return (
       <div className="mb-10 p-5 rounded-lg bg-[#161B26] shadow-lg border border-slate-700">
-        <h2 className="text-slate-200 text-2xl md:text-[28px] font-bold text-center mb-6">🔄 Đang tải khuyến nghị…</h2>
+        <h2 className="text-slate-200 text-2xl md:text-[28px] font-bold text-center mb-2">Khuyến nghị</h2>
+        <Spinner text="Đang tải khuyến nghị…" />
       </div>
     );
   }

@@ -1,6 +1,7 @@
 import React from "react";
 import { stockAPI } from "../services/api";
 import { useEffect, useState } from "react";
+import Spinner from "./Spinner";
 import {
   ResponsiveContainer,
   ComposedChart,
@@ -23,48 +24,7 @@ const priceClass = (delta) => {
 };
 
 const Board = () => {
-  const sampleRows = [
-    {
-      symbol: "ACB",
-      tran: 25.65,
-      san: 22.35,
-      tc: 24.0,
-      buy: {
-        g3: 23.8,
-        kl3: 139200,
-        g2: 23.85,
-        kl2: 225500,
-        g1: 23.9,
-        kl1: 62100,
-      },
-      match: { price: 23.9, vol: 200, delta: -0.1, deltaPct: -0.42 },
-      sell: {
-        g1: 23.95,
-        kl1: 39200,
-        g2: 24.0,
-        kl2: 201200,
-        g3: 24.05,
-        kl3: 31200,
-      },
-      totalVol: 7831900,
-      high: 24.05,
-      low: 23.65,
-      foreign: { buy: 473500, sell: 871600, room: 71417681 },
-    },
-    {
-      symbol: "BCM",
-      tran: 64.7,
-      san: 56.3,
-      tc: 60.5,
-      buy: { g3: 59.3, kl3: 8900, g2: 59.4, kl2: 1700, g1: 59.5, kl1: 5100 },
-      match: { price: 59.6, vol: 200, delta: -0.9, deltaPct: -1.49 },
-      sell: { g1: 59.6, kl1: 3800, g2: 59.7, kl2: 4100, g3: 59.8, kl3: 10100 },
-      totalVol: 215900,
-      high: 60.8,
-      low: 58.5,
-      foreign: { buy: 5520, sell: 108400, room: 329074955 },
-    },
-  ];
+  // Removed sample rows; strictly show loading or empty/data states
 
   const [data, setData] = React.useState([]);
   const [historyMap, setHistoryMap] = React.useState({});
@@ -159,9 +119,27 @@ const Board = () => {
     fetchData();
   }, []);
 
-  const rows = Array.isArray(data) && data.length ? data : sampleRows;
-  const totalPages = Math.ceil(rows.length / pageSize);
+  const rows = Array.isArray(data) ? data : [];
+  const totalPages = Math.max(1, Math.ceil((rows.length || 0) / pageSize));
   const visibleRows = rows.slice((page - 1) * pageSize, page * pageSize);
+
+  if (isLoading) {
+    return (
+      <div className="mt-6 rounded-xl border border-slate-700 bg-slate-900 p-6">
+        <h2 className="text-slate-200 text-xl font-semibold mb-2">Bảng giá Top 100</h2>
+        <Spinner text="Đang tải dữ liệu bảng…" />
+      </div>
+    );
+  }
+
+  if (!rows.length) {
+    return (
+      <div className="mt-6 rounded-xl border border-slate-700 bg-slate-900 p-6">
+        <h2 className="text-slate-200 text-xl font-semibold mb-2">Bảng giá Top 100</h2>
+        <p className="text-slate-400 text-sm">Không có dữ liệu.</p>
+      </div>
+    );
+  }
 
   return (
     <div className='mt-6 overflow-x-auto rounded-xl border border-slate-700 bg-slate-900'>

@@ -328,12 +328,11 @@ def get_single_stock(symbol: str, days: int = 30):
     }
 
 @app.get("/model-input/{symbol}")
-def get_model_input(symbol: str, days: int = 50, source: str = 'VNStock'):
+def get_model_input(symbol: str, days: int = 50):
     """
     Trả về input gồm đúng 50 dòng cho một mã cổ phiếu,
     với các cột: time, open, high, low, close, volume, symbol.
 
-    - source: 'VNStock' để lấy từ provider, 'local' để dùng CSV fallback.
     - days: số ngày quá khứ cần lấy tối thiểu để đảm bảo 50 dòng.
     """
     symbol = symbol.upper()
@@ -345,7 +344,7 @@ def get_model_input(symbol: str, days: int = 50, source: str = 'VNStock'):
     df: pd.DataFrame = pd.DataFrame()
 
     # Try cache first (model_input cache stores last-50 normalized rows)
-    cache_key_inp = f"{symbol}|{source.lower()}|{int(days)}"
+    cache_key_inp = f"{symbol}|{int(days)}"
     cached_inp = CACHE["model_input"].get(cache_key_inp)
     if cached_inp and _is_fresh(cached_inp.get("ts"), CACHE_TTL_MODEL_INPUT_SECONDS):
         df_cached: pd.DataFrame = cached_inp.get("df")
@@ -357,12 +356,12 @@ def get_model_input(symbol: str, days: int = 50, source: str = 'VNStock'):
                 "data": df_50.to_dict(orient='records')
             }
 
-    if source.lower() == 'vnstock':
-        df = get_stock_history(symbol, start_date, end_date)
-        df = _normalize_history_df(df, symbol)
+    # Always try provider (vnstock)
+    df = get_stock_history(symbol, start_date, end_date)
+    df = _normalize_history_df(df, symbol)
 
-    # Fallback to local CSV if insufficient rows or explicitly requested
-    if df.empty or len(df) < 50 or source.lower() == 'local':
+    # Fallback to local CSV only if provider thiếu dữ liệu
+    if df.empty or len(df) < 50:
         try:
             # Build path to local CSV within repo
             repo_root = _find_repo_root(os.path.dirname(__file__))
@@ -451,12 +450,21 @@ def predict_symbol(symbol: str, days: int = 70, source: str = 'VNStock'):
     end_date = datetime.now().strftime('%Y-%m-%d')
     start_date = (datetime.now() - timedelta(days=max(days, 70))).strftime('%Y-%m-%d')
 
+    # Chuẩn hóa source
+    src_in = (source or '').strip().lower()
+    if src_in in {'api', 'vnstock', 'provider', 'remote', 'live'}:
+        source_norm = 'VNStock'
+    elif src_in in {'local', 'csv', 'offline'}:
+        source_norm = 'local'
+    else:
+        source_norm = source
+
     df: pd.DataFrame = pd.DataFrame()
-    if source.lower() == 'vnstock':
+    if source_norm.lower() == 'vnstock':
         df = get_stock_history(symbol_u, start_date, end_date)
         df = _normalize_history_df(df, symbol_u)
 
-    if df.empty or len(df) < 50 or source.lower() == 'local':
+    if df.empty or len(df) < 50 or source_norm.lower() == 'local':
         try:
             repo_root = _find_repo_root(os.path.dirname(__file__))
             local_csv = os.path.join(repo_root, 'data', 'raw', 'ta', 'vietnam_stock_price_history_2022-10-31_2025-10-31.csv')
@@ -531,7 +539,7 @@ def predict_symbol(symbol: str, days: int = 70, source: str = 'VNStock'):
 
 
 @app.get("/predict-top100")
-def predict_top100(days: int = 60, source: str = 'local', limit: int = None, save_csv: bool = False):
+def predict_top100(days: int = 60, limit: int = None, save_csv: bool = False):
     """
     Chạy dự báo cho Top 100 mã và trả về list được sắp xếp theo xác suất mua giảm dần.
 
@@ -540,7 +548,8 @@ def predict_top100(days: int = 60, source: str = 'local', limit: int = None, sav
     - save_csv: nếu True, ghi thêm file top100_predictions.csv tại thư mục server.
     """
     try:
-        df_res = run_model_on_top100(server_url='http://127.0.0.1:8000', days=days, source=source, limit=limit)
+        # Use the running API port (5000) to fetch model inputs
+        df_res = run_model_on_top100(server_url='http://127.0.0.1:5000', days=days, source='VNStock', limit=limit)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Prediction failed: {e}")
 
@@ -566,7 +575,7 @@ def predict_top100(days: int = 60, source: str = 'local', limit: int = None, sav
 
     payload = {
         "count": len(records),
-        "source": source,
+        "source": "VNStock",
         "data": records,
     }
 

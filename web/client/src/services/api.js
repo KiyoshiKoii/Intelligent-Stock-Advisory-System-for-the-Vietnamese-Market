@@ -33,4 +33,13 @@ export const stockAPI = {
     });
     return response.data;
   },
+
+  // Get top recommendations by computing on server now
+  // source: 'VNStock' (live) or 'local'
+  getTopRecommendations: async ({ source = "VNStock", limit = 100, save_csv = false, days = 60 } = {}) => {
+    const response = await axios.get(`${API_BASE_URL}/predict-top100`, {
+      params: { source, limit, save_csv, days },
+    });
+    return response.data;
+  },
 };
